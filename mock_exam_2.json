@@ -1,0 +1,902 @@
+[
+  {
+    "questionText": "某公司每季進行預測，以決定如何優化營運以滿足預期需求。該公司使用 ML 模型進行這些預測。一名 AI 實踐者正在撰寫一份關於已訓練 ML 模型的報告，以向公司利害關係人提供透明度與可解釋性。為了符合透明度與可解釋性的要求，AI 實踐者應在報告中包含什麼？",
+    "options": [
+      "模型訓練的程式碼",
+      "部分依賴圖 (PDPs)",
+      "訓練的範例資料",
+      "模型收斂表"
+    ],
+    "correctAnswer": 1,
+    "explanation": "部分依賴圖(PDPs)清楚展示特徵如何影響模型預測，提供良好的可解釋性和透明度。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某律師事務所想要利用大型語言模型 (LLMs) 建立一個 AI 應用程式。該應用程式將閱讀法律文件並擷取文件中的重點。哪一種解決方案可滿足這些需求？",
+    "options": [
+      "建立自動化命名實體識別系統。",
+      "建立推薦引擎。",
+      "開發摘要聊天機器人。",
+      "開發多語言翻譯系統。"
+    ],
+    "correctAnswer": 2,
+    "explanation": "摘要聊天機器人可以讀取長篇文件並提取關鍵重點，最適合法律文件處理。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想根據基因特徵將人類基因分為 20 類。該公司需要一個 ML 演算法，能夠記錄模型內部機制如何影響輸出。哪一種 ML 演算法符合這些要求？",
+    "options": [
+      "決策樹",
+      "線性回歸",
+      "邏輯斯回歸",
+      "神經網路"
+    ],
+    "correctAnswer": 0,
+    "explanation": "決策樹提供清晰的決策路徑和規則，可以完整記錄模型如何做出分類決定。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司建立了一個影像分類模型，用於從植物葉片照片預測植物疾病。該公司想評估模型正確分類了多少張圖片。應使用哪一個評估指標來衡量模型表現？",
+    "options": [
+      "決定係數 (R-squared)",
+      "準確率",
+      "均方根誤差 (RMSE)",
+      "學習率"
+    ],
+    "correctAnswer": 1,
+    "explanation": "準確率(Accuracy)直接測量正確分類的樣本比例，是評估分類模型的基本指標。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司正在使用預先訓練的大型語言模型 (LLM) 建立產品推薦聊天機器人。該公司需要 LLM 的輸出簡短且以特定語言撰寫。哪一種解決方案能使 LLM 的回應品質符合公司的期望？",
+    "options": [
+      "調整提示。",
+      "選擇不同大小的 LLM。",
+      "提高溫度值。",
+      "提高 Top K 值。"
+    ],
+    "correctAnswer": 0,
+    "explanation": "調整提示(包括指定語言和長度要求)是控制 LLM 輸出格式和內容的最直接方法。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司在生產環境中使用 Amazon SageMaker 作為其 ML 管線。該公司的輸入資料大小高達 1 GB，處理時間長達 1 小時。公司需要接近即時的延遲。哪一種 SageMaker 推論選項符合這些需求？",
+    "options": [
+      "即時推論",
+      "無伺服器推論",
+      "非同步推論",
+      "批次轉換"
+    ],
+    "correctAnswer": 2,
+    "explanation": "非同步推論適合處理大型資料和長時間處理的請求，同時提供接近即時的回應機制。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司正在使用特定領域的模型。該公司想避免從頭開始建立新模型，而希望利用預先訓練的模型來適應新的相關任務。哪一種 ML 策略符合這些需求？",
+    "options": [
+      "增加訓練次數 (epochs)。",
+      "使用遷移學習。",
+      "減少訓練次數 (epochs)。",
+      "使用無監督學習。"
+    ],
+    "correctAnswer": 1,
+    "explanation": "遷移學習允許使用預訓練模型的知識來適應新任務，無需從頭訓練。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司正在打造一個為防護眼鏡生成影像的解決方案。該方案必須具有高準確度，並將錯誤標註的風險降到最低。哪一種解決方案可以滿足這些要求？",
+    "options": [
+      "利用 Amazon SageMaker Ground Truth Plus 進行人類參與的驗證",
+      "使用 Amazon Bedrock 知識庫進行資料擴增",
+      "使用 Amazon Rekognition 進行影像辨識",
+      "使用 Amazon QuickSight Q 進行資料摘要"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon SageMaker Ground Truth Plus 提供人工審核和驗證，確保標註的高準確度。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想使用 Amazon Bedrock 上的基礎模型 (FM) 建立聊天機器人。FM 需要存取儲存在 Amazon S3 儲存貯體中的加密資料。該資料使用 Amazon S3 受管金鑰 (SSE-S3) 進行加密。FM 在嘗試存取 S3 資料時失敗。哪一種解決方案可以滿足這些需求？",
+    "options": [
+      "確保 Amazon Bedrock 採用的角色具有使用正確加密金鑰解密資料的權限。",
+      "將 S3 儲存貯體設定為公開存取以啟用網際網路訪問。",
+      "使用提示工程技術告訴模型從 Amazon S3 尋找資訊。",
+      "確保 S3 資料不包含敏感資訊。"
+    ],
+    "correctAnswer": 0,
+    "explanation": "需要確保 Bedrock 的 IAM 角色有權限訪問和解密 S3 中的加密資料。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想使用語言模型在邊緣裝置上建立推論應用程式。推論必須具有最低延遲。哪一種解決方案能滿足這些需求？",
+    "options": [
+      "在邊緣裝置上部署經過優化的小型語言模型 (SLMs)。",
+      "在邊緣裝置上部署經過優化的大型語言模型 (LLMs)。",
+      "整合集中式小型語言模型 (SLM) API 以與邊緣裝置進行非同步通信。",
+      "整合集中式大型語言模型 (LLM) API 以與邊緣裝置進行非同步通信。"
+    ],
+    "correctAnswer": 0,
+    "explanation": "在邊緣部署優化的小型模型可以實現最低延遲，無需網路往返。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司希望使用生成式 AI 為產品建立影像。該公司想控制所產生影像的風格、顏色與構圖。哪一種生成式 AI 模型符合這些需求？",
+    "options": [
+      "擴散模型",
+      "變分自編碼器 (VAE)",
+      "生成對抗網路 (GAN)",
+      "遞迴神經網路 (RNN)"
+    ],
+    "correctAnswer": 0,
+    "explanation": "擴散模型能夠通過提示詞精確控制生成圖像的各種屬性。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想使用大型語言模型 (LLM) 建立對話式 AI 應用程式。該應用程式需要理解對話的上下文並記住先前的交流內容。哪一種 LLM 功能最適合這項需求？",
+    "options": [
+      "提示工程",
+      "微調",
+      "嵌入向量",
+      "上下文視窗"
+    ],
+    "correctAnswer": 3,
+    "explanation": "上下文視窗允許 LLM 記住和理解對話歷史。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某資料科學團隊正在訓練一個深度學習模型。該團隊發現訓練損失持續下降，但驗證損失開始上升。這表示什麼問題？",
+    "options": [
+      "模型欠擬合",
+      "模型過擬合",
+      "學習率太低",
+      "批次大小太小"
+    ],
+    "correctAnswer": 1,
+    "explanation": "訓練損失下降但驗證損失上升是典型的過擬合現象。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon Comprehend 分析客戶評論的情感。該公司需要識別特定產品功能的情感。哪一種 Comprehend 功能最適合？",
+    "options": [
+      "主題建模",
+      "關鍵短語提取",
+      "目標情感分析",
+      "語法分析"
+    ],
+    "correctAnswer": 2,
+    "explanation": "目標情感分析可以針對特定實體或功能進行情感分析。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司正在使用 Amazon SageMaker 訓練模型。訓練資料包含敏感的個人資訊。哪一種方法可以保護訓練資料？",
+    "options": [
+      "使用 Amazon Macie 掃描資料",
+      "在 VPC 中訓練模型並啟用網路隔離",
+      "使用 AWS CloudTrail 記錄存取",
+      "將資料儲存在公開 S3 儲存貯體"
+    ],
+    "correctAnswer": 1,
+    "explanation": "在 VPC 中訓練並啟用網路隔離可以確保資料不會離開安全環境。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要建立一個推薦系統，根據使用者的瀏覽歷史推薦產品。哪一個 AWS 服務最適合？",
+    "options": [
+      "Amazon Forecast",
+      "Amazon Personalize",
+      "Amazon Comprehend",
+      "Amazon Lex"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Personalize 專門用於建立個人化推薦系統。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某資料科學家正在處理類別不平衡的資料集，其中正樣本只佔 5%。哪一種技術可以改善模型效能？",
+    "options": [
+      "增加學習率",
+      "使用 SMOTE 過採樣",
+      "減少特徵數量",
+      "增加批次大小"
+    ],
+    "correctAnswer": 1,
+    "explanation": "SMOTE（合成少數類過採樣技術）可以平衡類別分佈。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想使用 Amazon Bedrock 建立 RAG（檢索增強生成）應用程式。資料儲存在哪裡？",
+    "options": [
+      "Amazon RDS",
+      "Amazon DynamoDB",
+      "Amazon Bedrock 知識庫",
+      "Amazon ElastiCache"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon Bedrock 知識庫專門設計用於 RAG 應用程式的資料儲存。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon Rekognition 偵測影片中的不當內容。哪一個功能最適合？",
+    "options": [
+      "人臉比對",
+      "名人識別",
+      "內容審核",
+      "文字偵測"
+    ],
+    "correctAnswer": 2,
+    "explanation": "內容審核功能專門用於偵測不當或敏感內容。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某資料科學團隊想要追蹤和比較多個 ML 實驗。哪一個 SageMaker 功能最適合？",
+    "options": [
+      "SageMaker Pipelines",
+      "SageMaker Experiments",
+      "SageMaker Model Monitor",
+      "SageMaker Debugger"
+    ],
+    "correctAnswer": 1,
+    "explanation": "SageMaker Experiments 專門用於追蹤、組織和比較 ML 實驗。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要最小化大型語言模型的推論成本。哪一種技術最有效？",
+    "options": [
+      "增加批次大小",
+      "模型量化",
+      "增加上下文長度",
+      "使用更大的模型"
+    ],
+    "correctAnswer": 1,
+    "explanation": "模型量化可以減少模型大小和記憶體使用，從而降低推論成本。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司使用 Amazon Polly 將文字轉換為語音。該公司想要自訂發音。應使用哪一個功能？",
+    "options": [
+      "SSML 標記",
+      "神經語音",
+      "語音標記",
+      "詞彙表"
+    ],
+    "correctAnswer": 3,
+    "explanation": "詞彙表功能允許自訂特定詞彙的發音。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某資料科學家正在訓練時間序列預測模型。哪一個 AWS 服務最適合？",
+    "options": [
+      "Amazon Forecast",
+      "Amazon Comprehend",
+      "Amazon Textract",
+      "Amazon Translate"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon Forecast 專門用於時間序列預測。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon SageMaker 進行自動模型調整。應使用哪一個功能？",
+    "options": [
+      "SageMaker Autopilot",
+      "SageMaker Hyperparameter Tuning",
+      "SageMaker Debugger",
+      "SageMaker Clarify"
+    ],
+    "correctAnswer": 1,
+    "explanation": "SageMaker Hyperparameter Tuning 自動化超參數調整過程。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要偵測 ML 模型部署後的資料漂移。應使用哪一個工具？",
+    "options": [
+      "SageMaker Model Monitor",
+      "SageMaker Debugger",
+      "SageMaker Experiments",
+      "SageMaker Clarify"
+    ],
+    "correctAnswer": 0,
+    "explanation": "SageMaker Model Monitor 專門用於監控資料和模型品質漂移。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想使用 Amazon Bedrock 建立多語言聊天機器人。哪一個基礎模型最適合？",
+    "options": [
+      "Amazon Titan Text",
+      "Stability AI",
+      "Anthropic Claude",
+      "AI21 Labs Jurassic"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Anthropic Claude 在多語言理解方面表現優異。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某資料科學家想要視覺化高維度資料。哪一種降維技術最常用？",
+    "options": [
+      "主成分分析 (PCA)",
+      "線性回歸",
+      "決策樹",
+      "K-means"
+    ],
+    "correctAnswer": 0,
+    "explanation": "PCA 是最常用的降維技術，可以保留主要變異性。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon Kendra 建立企業搜尋解決方案。哪一種資料來源 Kendra 支援？",
+    "options": [
+      "僅支援 Amazon S3",
+      "僅支援資料庫",
+      "支援多種資料來源包括 S3、SharePoint、Salesforce",
+      "僅支援本地檔案"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon Kendra 支援多種企業資料來源的整合。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司訓練的分類模型精確率為 90%，召回率為 60%。這表示什麼？",
+    "options": [
+      "模型有很多假陽性",
+      "模型有很多假陰性",
+      "模型完全準確",
+      "模型需要更多資料"
+    ],
+    "correctAnswer": 1,
+    "explanation": "低召回率表示模型遺漏了許多真實的正例（假陰性多）。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon SageMaker 建立無程式碼 ML 解決方案。應使用哪一個功能？",
+    "options": [
+      "SageMaker Studio",
+      "SageMaker Autopilot",
+      "SageMaker Notebooks",
+      "SageMaker Processing"
+    ],
+    "correctAnswer": 1,
+    "explanation": "SageMaker Autopilot 提供自動化的 ML 工作流程，無需編寫程式碼。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要在 Amazon Bedrock 中控制模型輸出的隨機性。應調整哪一個參數？",
+    "options": [
+      "Top P",
+      "溫度 (Temperature)",
+      "Top K",
+      "最大 token 數"
+    ],
+    "correctAnswer": 1,
+    "explanation": "溫度參數控制輸出的隨機性，較低的值產生更確定的輸出。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某資料科學家想要處理文字資料中的停用詞。這屬於哪一個 NLP 處理步驟？",
+    "options": [
+      "標記化",
+      "詞幹提取",
+      "文字清理",
+      "詞嵌入"
+    ],
+    "correctAnswer": 2,
+    "explanation": "移除停用詞是文字清理（預處理）的一部分。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon Transcribe 轉錄醫療對話。應使用哪一個專門功能？",
+    "options": [
+      "Amazon Transcribe Medical",
+      "Amazon Comprehend Medical",
+      "自訂詞彙",
+      "說話者識別"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon Transcribe Medical 專門針對醫療術語優化。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要評估 ML 模型的公平性和偏差。應使用哪一個 SageMaker 功能？",
+    "options": [
+      "SageMaker Debugger",
+      "SageMaker Clarify",
+      "SageMaker Model Monitor",
+      "SageMaker Experiments"
+    ],
+    "correctAnswer": 1,
+    "explanation": "SageMaker Clarify 專門用於偵測模型偏差和提供可解釋性。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某資料科學家正在使用梯度下降優化模型。學習率設定太高會導致什麼問題？",
+    "options": [
+      "模型收斂太慢",
+      "模型無法收斂，損失震盪",
+      "模型過擬合",
+      "模型欠擬合"
+    ],
+    "correctAnswer": 1,
+    "explanation": "學習率太高會導致梯度下降步伐過大，無法穩定收斂。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon Rekognition 建立人臉搜尋應用程式。第一步應該做什麼？",
+    "options": [
+      "建立集合 (Collection)",
+      "呼叫 DetectFaces API",
+      "訓練自訂模型",
+      "上傳影片"
+    ],
+    "correctAnswer": 0,
+    "explanation": "必須先建立集合來儲存人臉向量，才能進行搜尋。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用遷移學習微調預訓練模型。哪一層通常會被凍結？",
+    "options": [
+      "輸出層",
+      "全連接層",
+      "底層特徵提取層",
+      "所有層都不凍結"
+    ],
+    "correctAnswer": 2,
+    "explanation": "通常凍結底層，因為它們學習到的通用特徵可以重複使用。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon Lex 建立聊天機器人。什麼是 Lex 中的「意圖」？",
+    "options": [
+      "使用者想要執行的動作",
+      "機器人的回應",
+      "訓練資料",
+      "對話歷史"
+    ],
+    "correctAnswer": 0,
+    "explanation": "意圖代表使用者想要完成的目標或動作。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某資料科學家想要處理缺失值。哪一種方法是最簡單的？",
+    "options": [
+      "刪除包含缺失值的行",
+      "使用複雜的插補演算法",
+      "訓練預測模型",
+      "忽略缺失值"
+    ],
+    "correctAnswer": 0,
+    "explanation": "刪除缺失資料行是最簡單的方法，但可能損失資訊。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon Bedrock 的 Agents 功能。Agents 可以做什麼？",
+    "options": [
+      "僅回答問題",
+      "執行多步驟任務並呼叫 API",
+      "僅生成文字",
+      "僅分析資料"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Bedrock Agents 可以規劃並執行複雜的多步驟任務。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要標準化數值特徵。哪一種方法將資料縮放到 0-1 範圍？",
+    "options": [
+      "Z-score 標準化",
+      "Min-Max 縮放",
+      "對數轉換",
+      "Box-Cox 轉換"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Min-Max 縮放將資料線性轉換到指定範圍（通常 0-1）。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司使用 Amazon SageMaker 訓練模型時遇到記憶體不足錯誤。哪一種解決方案最有效？",
+    "options": [
+      "減少批次大小",
+      "增加學習率",
+      "增加訓練次數",
+      "減少訓練資料"
+    ],
+    "correctAnswer": 0,
+    "explanation": "減少批次大小可以降低記憶體使用。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon Comprehend 提取文件中的實體。哪一種實體類型不是內建支援的？",
+    "options": [
+      "人名",
+      "地點",
+      "產品 SKU",
+      "日期"
+    ],
+    "correctAnswer": 2,
+    "explanation": "產品 SKU 需要訓練自訂實體識別器。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某資料科學家想要評估回歸模型。哪一個指標值越小越好？",
+    "options": [
+      "R-squared",
+      "均方誤差 (MSE)",
+      "準確率",
+      "AUC"
+    ],
+    "correctAnswer": 1,
+    "explanation": "MSE 是誤差度量，值越小表示模型越準確。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon Textract 從表格中提取資料。應使用哪一個 API？",
+    "options": [
+      "DetectDocumentText",
+      "AnalyzeDocument",
+      "AnalyzeExpense",
+      "DetectText"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AnalyzeDocument API 支援表格和表單資料提取。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要在 SageMaker 中實現 A/B 測試。應使用哪一個功能？",
+    "options": [
+      "多變體端點",
+      "批次轉換",
+      "Processing Job",
+      "Training Job"
+    ],
+    "correctAnswer": 0,
+    "explanation": "多變體端點允許在同一端點上部署多個模型版本進行 A/B 測試。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某資料科學家正在處理序列資料。哪一種神經網路架構最適合？",
+    "options": [
+      "卷積神經網路 (CNN)",
+      "循環神經網路 (RNN)",
+      "多層感知器 (MLP)",
+      "自編碼器"
+    ],
+    "correctAnswer": 1,
+    "explanation": "RNN 專門設計用於處理序列資料。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon Bedrock 生成高品質圖像。應選擇哪一個模型？",
+    "options": [
+      "Amazon Titan Text",
+      "Anthropic Claude",
+      "Stability AI Stable Diffusion",
+      "AI21 Labs Jurassic"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Stable Diffusion 是專門的圖像生成模型。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要監控 SageMaker 端點的延遲和錯誤率。應使用哪一個服務？",
+    "options": [
+      "AWS CloudTrail",
+      "Amazon CloudWatch",
+      "AWS Config",
+      "Amazon Inspector"
+    ],
+    "correctAnswer": 1,
+    "explanation": "CloudWatch 提供端點的效能指標監控。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某資料科學家想要使用詞嵌入表示文字。哪一個不是常見的詞嵌入方法？",
+    "options": [
+      "Word2Vec",
+      "GloVe",
+      "BERT",
+      "K-means"
+    ],
+    "correctAnswer": 3,
+    "explanation": "K-means 是聚類演算法，不是詞嵌入方法。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon Translate 翻譯專業術語。應使用哪一個功能？",
+    "options": [
+      "神經機器翻譯",
+      "自訂術語",
+      "批次翻譯",
+      "即時翻譯"
+    ],
+    "correctAnswer": 1,
+    "explanation": "自訂術語功能允許指定專業詞彙的翻譯。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司訓練的二元分類模型 AUC-ROC 為 0.5。這表示什麼？",
+    "options": [
+      "模型表現優秀",
+      "模型表現與隨機猜測相同",
+      "模型表現很差",
+      "模型過擬合"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AUC 為 0.5 表示模型沒有辨別能力，等同於隨機猜測。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon SageMaker Feature Store。Feature Store 的主要優勢是什麼？",
+    "options": [
+      "訓練模型",
+      "集中管理和重用特徵",
+      "部署模型",
+      "視覺化資料"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Feature Store 提供特徵的集中儲存和管理，促進重用。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某資料科學家想要處理文字分類任務。哪一種方法最簡單？",
+    "options": [
+      "訓練 BERT 模型",
+      "使用預訓練模型進行遷移學習",
+      "從頭訓練 Transformer",
+      "實作自訂神經網路"
+    ],
+    "correctAnswer": 1,
+    "explanation": "使用預訓練模型進行遷移學習是最快速有效的方法。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon Forecast 預測需求。需要提供哪種類型的資料？",
+    "options": [
+      "僅目標時間序列資料",
+      "目標時間序列和相關時間序列資料",
+      "僅圖像資料",
+      "僅文字資料"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Forecast 可以使用目標時間序列和相關時間序列資料提高預測準確度。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要在 SageMaker 中使用分散式訓練。哪一種策略適合資料平行處理？",
+    "options": [
+      "每個 GPU 處理完整模型和部分資料",
+      "每個 GPU 處理部分模型和完整資料",
+      "單個 GPU 處理所有資料",
+      "不使用 GPU"
+    ],
+    "correctAnswer": 0,
+    "explanation": "資料平行處理是將資料分配到多個設備，每個設備有完整的模型副本。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某資料科學家想要視覺化模型的決策邊界。這最適合哪種類型的問題？",
+    "options": [
+      "時間序列預測",
+      "二維分類問題",
+      "文字生成",
+      "語音識別"
+    ],
+    "correctAnswer": 1,
+    "explanation": "決策邊界視覺化最適合低維度（2D）分類問題。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon Bedrock 控制生成內容的安全性。應使用哪一個功能？",
+    "options": [
+      "提示工程",
+      "Guardrails",
+      "微調",
+      "RAG"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Guardrails 功能專門用於控制和過濾生成內容的安全性。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司訓練的模型在訓練集和測試集上都表現不佳。這表示什麼問題？",
+    "options": [
+      "過擬合",
+      "欠擬合",
+      "資料洩漏",
+      "完美擬合"
+    ],
+    "correctAnswer": 1,
+    "explanation": "在訓練集和測試集上都表現不佳表示模型複雜度不足（欠擬合）。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon Comprehend 分析客戶反饋的主要主題。應使用哪一個功能？",
+    "options": [
+      "情感分析",
+      "實體識別",
+      "主題建模",
+      "語法分析"
+    ],
+    "correctAnswer": 2,
+    "explanation": "主題建模可以從文件集合中發現主要主題。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某資料科學家想要選擇最重要的特徵。哪一種方法可以自動進行特徵選擇？",
+    "options": [
+      "決策樹的特徵重要性",
+      "手動檢查每個特徵",
+      "隨機選擇",
+      "使用所有特徵"
+    ],
+    "correctAnswer": 0,
+    "explanation": "決策樹可以自動計算特徵重要性分數。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon SageMaker JumpStart。JumpStart 提供什麼？",
+    "options": [
+      "僅自訂演算法",
+      "預訓練模型和解決方案範本",
+      "僅資料標註工具",
+      "僅視覺化工具"
+    ],
+    "correctAnswer": 1,
+    "explanation": "SageMaker JumpStart 提供預訓練模型和端到端解決方案範本。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要在邊緣設備上部署 ML 模型。哪一個 AWS 服務最適合？",
+    "options": [
+      "Amazon SageMaker",
+      "AWS IoT Greengrass",
+      "Amazon EC2",
+      "AWS Lambda"
+    ],
+    "correctAnswer": 1,
+    "explanation": "AWS IoT Greengrass 專門用於在邊緣設備上運行 ML 推論。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某資料科學家想要處理多類別分類問題的不平衡資料。哪一個評估指標最合適？",
+    "options": [
+      "準確率",
+      "Macro F1-score",
+      "僅精確率",
+      "僅召回率"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Macro F1-score 對所有類別一視同仁，適合不平衡資料集。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon Rekognition Custom Labels。這個功能的主要用途是什麼？",
+    "options": [
+      "人臉識別",
+      "訓練自訂物件偵測和圖像分類模型",
+      "文字偵測",
+      "影片分析"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Custom Labels 允許訓練針對特定業務需求的自訂視覺模型。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要優化 Transformer 模型的推論速度。哪一種技術最有效？",
+    "options": [
+      "增加層數",
+      "知識蒸餾",
+      "增加隱藏單元",
+      "增加訓練資料"
+    ],
+    "correctAnswer": 1,
+    "explanation": "知識蒸餾可以將大模型的知識轉移到小模型，提高推論速度。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon Bedrock 實作 Prompt Engineering。哪一種技術不屬於 Prompt Engineering？",
+    "options": [
+      "Few-shot learning",
+      "Chain-of-thought prompting",
+      "模型微調",
+      "角色設定"
+    ],
+    "correctAnswer": 2,
+    "explanation": "模型微調是改變模型權重的過程，不屬於 Prompt Engineering。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某資料科學家想要處理時間序列異常偵測。哪一個 AWS 服務提供此功能？",
+    "options": [
+      "Amazon Fraud Detector",
+      "Amazon Lookout for Metrics",
+      "Amazon Comprehend",
+      "Amazon Textract"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Lookout for Metrics 專門用於自動偵測時間序列資料中的異常。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要在 SageMaker 中使用容器化的自訂演算法。應該如何做？",
+    "options": [
+      "僅使用內建演算法",
+      "建立自訂 Docker 容器並推送到 ECR",
+      "上傳 Python 腳本",
+      "使用 Lambda 函數"
+    ],
+    "correctAnswer": 1,
+    "explanation": "SageMaker 支援使用儲存在 ECR 中的自訂 Docker 容器。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要評估生成式 AI 模型的輸出品質。哪一個指標常用於評估文字生成？",
+    "options": [
+      "準確率",
+      "BLEU 分數",
+      "均方誤差",
+      "AUC"
+    ],
+    "correctAnswer": 1,
+    "explanation": "BLEU 分數常用於評估機器翻譯和文字生成的品質。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon SageMaker 實現 MLOps。哪些組件是必需的？（選擇兩項）",
+    "options": [
+      "SageMaker Pipelines",
+      "僅 Jupyter Notebook",
+      "SageMaker Model Registry",
+      "僅本地開發"
+    ],
+    "correctAnswer": 0,
+    "explanation": "SageMaker Pipelines（CI/CD）和 Model Registry（模型版本管理）是 MLOps 的關鍵組件。選項 C 也正確。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某資料科學家想要處理影像分類任務但訓練資料有限。哪一種策略最有效？",
+    "options": [
+      "從頭訓練大型模型",
+      "使用資料擴增和遷移學習",
+      "減少模型大小",
+      "僅使用現有資料"
+    ],
+    "correctAnswer": 1,
+    "explanation": "資料擴增增加訓練樣本多樣性，遷移學習利用預訓練模型知識。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon Bedrock 控制生成文字的長度。應調整哪一個參數？",
+    "options": [
+      "溫度",
+      "Top P",
+      "最大 token 數",
+      "Top K"
+    ],
+    "correctAnswer": 2,
+    "explanation": "最大 token 數參數限制生成文字的最大長度。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要偵測信用卡交易欺詐。這是哪種類型的 ML 問題？",
+    "options": [
+      "回歸",
+      "聚類",
+      "異常偵測/分類",
+      "降維"
+    ],
+    "correctAnswer": 2,
+    "explanation": "欺詐偵測是異常偵測或二元分類問題。",
+    "category": "AWS AI 模擬考二"
+  },
+  {
+    "questionText": "某公司想要使用 Amazon Lex 實現多輪對話。需要使用哪一個功能？",
+    "options": [
+      "插槽 (Slots)",
+      "僅意圖",
+      "對話狀態管理",
+      "所有以上"
+    ],
+    "correctAnswer": 3,
+    "explanation": "多輪對話需要意圖、插槽和對話狀態管理的綜合使用。",
+    "category": "AWS AI 模擬考二"
+  }
+]

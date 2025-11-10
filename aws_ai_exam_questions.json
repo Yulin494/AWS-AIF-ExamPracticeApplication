@@ -1,0 +1,784 @@
+[
+  {
+    "questionText": "某公司想使用 Amazon Bedrock 與上傳至 Amazon S3 的客戶資料來開發大型語言模型 (LLM) 應用程式。公司的安全政策規定，每個團隊只能存取其所屬客戶的資料。哪一種解決方案能滿足這些需求？",
+    "options": [
+      "為每個團隊建立一個 Amazon Bedrock 客製服務角色,使其只能存取該團隊的客戶資料。",
+      "建立一個具有 Amazon S3 存取權的自訂服務角色,要求團隊在每個 Amazon Bedrock 請求上指定客戶名稱。",
+      "在 Amazon S3 中遮蔽個人資料,並更新儲存貯體政策以允許團隊存取。",
+      "建立一個擁有完整 Amazon S3 存取權的 Amazon Bedrock 角色,並為每個團隊建立僅能存取其客戶資料夾的 IAM 角色。"
+    ],
+    "correctAnswer": 0,
+    "explanation": "為每個團隊建立專屬的 Amazon Bedrock 客製服務角色,並限制其只能存取該團隊客戶資料,是最符合安全政策的解決方案。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某醫療公司在 Amazon Bedrock 部署一個疾病偵測模型。為遵循隱私政策,公司希望阻止模型在回應中包含病患個人資訊。公司還希望在發生政策違規時收到通知。哪一種解決方案可以滿足這些需求？",
+    "options": [
+      "使用 Amazon Macie 掃描模型輸出中的敏感資料並設定潛在違規警示。",
+      "設定 AWS CloudTrail 監控模型回應並在偵測到個人資訊時建立警示。",
+      "使用 Amazon Bedrock 的 Guardrails 過濾內容,並設定 Amazon CloudWatch 警報在政策違規時通知。",
+      "實作 Amazon SageMaker Model Monitor 以偵測資料漂移並在模型品質下降時收到警報。"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon Bedrock 的 Guardrails 功能專門用於過濾和控制模型輸出內容,搭配 CloudWatch 警報可在違規時即時通知。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司目前以人工方式審查所有以 PDF 格式提交的履歷。隨著公司成長,公司預計履歷數量將超過其審查能力。公司需要一個自動系統將 PDF 履歷轉換為純文字格式以便進一步處理。哪一個 AWS 服務符合此需求？",
+    "options": [
+      "Amazon Textract",
+      "Amazon Personalize",
+      "Amazon Lex",
+      "Amazon Transcribe"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon Textract 專門用於從文件(包括 PDF)中提取文字和結構化資料,是處理履歷的最佳選擇。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某教育機構正在建立一個問答應用程式,使用生成式 AI 模型來解釋複雜概念。該機構希望能根據提問者自動變更模型回應的風格。教育機構會提供模型提問者的年齡範圍。哪一種解決方案以最少的實作工作滿足這些需求？",
+    "options": [
+      "使用代表各年齡範圍的額外訓練資料進行微調。",
+      "在提示上下文中加入角色描述,指示模型回應應針對的年齡範圍。",
+      "使用 chain-of-thought 推理推斷適合該使用者的回應風格和複雜度。",
+      "根據使用者年齡總結回應文本,使年幼使用者獲得較短的回應。"
+    ],
+    "correctAnswer": 1,
+    "explanation": "在提示中加入角色描述和年齡範圍是最簡單且有效的方法,無需重新訓練模型即可調整回應風格。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "以下哪一種策略用於評估在圖像分類任務中使用的基礎模型 (FM) 的準確度？",
+    "options": [
+      "計算模型使用資源的總成本。",
+      "將模型的準確度與預定義的基準資料集進行比較。",
+      "計算神經網路的層數。",
+      "評估模型處理影像的色彩準確度。"
+    ],
+    "correctAnswer": 1,
+    "explanation": "使用預定義的基準資料集進行比較是評估圖像分類模型準確度的標準方法。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某會計公司希望實作大型語言模型 (LLM) 來自動化文件處理。該公司必須負責任地推行,以避免潛在傷害。公司在開發和部署 LLM 時應做哪些事情？(選擇兩項)",
+    "options": [
+      "將公平性指標納入模型評估。",
+      "調整模型的溫度參數。",
+      "修改訓練資料以減少偏差。",
+      "避免訓練資料過度擬合。",
+      "應用提示工程技術。"
+    ],
+    "correctAnswer": 0,
+    "explanation": "正確答案包括：A. 將公平性指標納入模型評估, C. 修改訓練資料以減少偏差。這兩項都是負責任 AI 的核心實踐。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司正在建立 ML 模型。公司收集新資料並透過建立相關矩陣、計算統計值和視覺化資料來分析這些資料。公司目前處於 ML 流程的哪一個階段？",
+    "options": [
+      "資料預處理",
+      "特徵工程",
+      "探索性資料分析",
+      "超參數調整"
+    ],
+    "correctAnswer": 2,
+    "explanation": "建立相關矩陣、計算統計值和視覺化資料都是探索性資料分析(EDA)的典型活動。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司有些文件因資料庫錯誤而缺字。公司想建立一個 ML 模型,能夠建議填補缺字的候選詞。哪一種模型符合這個需求？",
+    "options": [
+      "主題建模",
+      "分群模型",
+      "處方型 ML 模型",
+      "BERT 型模型"
+    ],
+    "correctAnswer": 3,
+    "explanation": "BERT(Bidirectional Encoder Representations from Transformers)專門設計用於理解上下文並填補遺漏的詞語。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司想展示過去 12 個月中最暢銷產品在不同零售據點的總銷售額。公司應使用哪一項 AWS 解決方案來自動生成圖表？",
+    "options": [
+      "在 Amazon EC2 中的 Amazon Q",
+      "Amazon Q Developer",
+      "在 Amazon QuickSight 中的 Amazon Q",
+      "在 AWS Chatbot 中的 Amazon Q"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon QuickSight 是 AWS 的商業智慧服務,其中的 Amazon Q 可以自動生成數據視覺化和圖表。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司正在建立一個聊天機器人以改善用戶體驗。公司使用 Amazon Bedrock 的大型語言模型 (LLM) 進行意圖識別,希望透過少量示例學習提高意圖識別準確度。為了滿足這些需求,公司還需要哪些額外資料？",
+    "options": [
+      "聊天機器人回應與正確用戶意圖的配對",
+      "用戶訊息與正確聊天機器人回應的配對",
+      "用戶訊息與正確用戶意圖的配對",
+      "用戶意圖與正確聊天機器人回應的配對"
+    ],
+    "correctAnswer": 2,
+    "explanation": "少量示例學習(Few-shot learning)需要用戶訊息與正確意圖的配對作為示例,以訓練模型識別意圖。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司正在 Amazon Bedrock 上的一個基礎模型上使用少量示例提示。該模型的提示目前包含 10 個範例,每天呼叫一次,表現良好。公司希望降低月成本。哪一種解決方案可以滿足這些需求？",
+    "options": [
+      "透過微調自訂模型。",
+      "減少提示中的 token 數量。",
+      "增加提示中的 token 數量。",
+      "使用預留吞吐量。"
+    ],
+    "correctAnswer": 1,
+    "explanation": "減少提示中的 token 數量可以直接降低每次 API 調用的成本,因為 LLM 服務通常按 token 計費。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "一名 AI 實踐者使用大型語言模型 (LLM) 創作行銷活動內容。生成的內容看起來合理且有根據,但實際上是錯誤的。LLM 面臨的是哪一種問題？",
+    "options": [
+      "資料洩漏",
+      "幻覺",
+      "過度擬合",
+      "欠擬合"
+    ],
+    "correctAnswer": 1,
+    "explanation": "幻覺(Hallucination)是指 LLM 生成看似合理但實際上不正確或虛構的內容。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "一名 AI 實踐者使用包含機密資料的訓練資料集在 Amazon Bedrock 上訓練了一個自訂模型。AI 實踐者希望確保自訂模型在推論回應時不會基於機密資料。AI 實踐者應如何防止基於機密資料的回應？",
+    "options": [
+      "刪除自訂模型,移除訓練資料集中的機密資料並重新訓練模型。",
+      "使用動態資料遮罩在推論回應中遮蔽機密資料。",
+      "使用 Amazon SageMaker 對推論回應中的機密資料加密。",
+      "使用 AWS KMS 加密自訂模型中的機密資料。"
+    ],
+    "correctAnswer": 1,
+    "explanation": "動態資料遮罩可以在推論時即時遮蔽機密資料,而不影響模型的其他功能。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司利用生成式 AI 建立了一個解決方案,使用大型語言模型 (LLMs) 將培訓手冊從英文翻譯成其他語言。公司希望透過檢查為手冊生成的文本來評估該解決方案的準確性。哪一種模型評估策略可以滿足這些要求？",
+    "options": [
+      "BLEU 指標",
+      "均方根誤差 (RMSE)",
+      "ROUGE 指標",
+      "F1 分數"
+    ],
+    "correctAnswer": 0,
+    "explanation": "BLEU(Bilingual Evaluation Understudy)是專門用於評估機器翻譯品質的標準指標。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某大型零售商每天收到數千條產品相關的客戶支援詢問。這些詢問需要迅速處理和回覆。該公司想實施 Amazon Bedrock 的代理 (Agents)。使用 Amazon Bedrock 代理有哪些關鍵優勢可以幫助這家零售商？",
+    "options": [
+      "生成自訂基礎模型來預測客戶需求",
+      "自動化重複性任務並編排複雜工作流程",
+      "自動調用多個基礎模型並整合結果",
+      "根據預定義的標準和指標選擇基礎模型"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Bedrock 代理的核心優勢是自動化重複性任務並編排複雜的工作流程,非常適合處理大量客戶詢問。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "在微調基礎模型 (FM) 時,持續進行預訓練的好處是什麼？",
+    "options": [
+      "有助於降低模型複雜度",
+      "隨著時間提升模型效能",
+      "減少訓練所需時間",
+      "優化模型推論時間"
+    ],
+    "correctAnswer": 1,
+    "explanation": "持續預訓練允許模型學習新的資料和模式,從而隨著時間提升整體效能。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "在生成式 AI 模型的語境中,什麼是 token？",
+    "options": [
+      "token 是生成式 AI 模型運算的基本單位,代表單詞、子詞或其他語言單位。",
+      "token 是生成式 AI 模型使用的單詞或概念的數學表示。",
+      "token 是生成式 AI 模型的預訓練權重,經微調用於特定任務。",
+      "token 是提供給生成式 AI 模型以生成輸出的特定提示或指令。"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Token 是生成式 AI 模型處理文本的基本單位,可以是完整的單詞、子詞或字符。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司想評估使用大型語言模型 (LLM) 進行推論相關的成本。公司想利用 Amazon Bedrock 建立生成式 AI 應用。哪一個因素會左右推論成本？",
+    "options": [
+      "消耗的 token 數量",
+      "溫度值",
+      "用於訓練 LLM 的資料量",
+      "總訓練時間"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon Bedrock 和大多數 LLM 服務按消耗的 token 數量計費,這是影響推論成本的主要因素。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司正在使用 Amazon SageMaker Studio 筆記本建構和訓練 ML 模型。公司將資料存放在 Amazon S3 儲存貯體。公司需要管理 S3 至 SageMaker Studio 筆記本的資料流。哪一種解決方案可以滿足這項需求？",
+    "options": [
+      "使用 Amazon Inspector 監控 SageMaker Studio。",
+      "使用 Amazon Macie 監控 SageMaker Studio。",
+      "將 SageMaker 設定為使用帶有 S3 端點的 VPC。",
+      "將 SageMaker 設定為使用 S3 Glacier Deep Archive。"
+    ],
+    "correctAnswer": 2,
+    "explanation": "使用 VPC 端點可以安全地管理 SageMaker 與 S3 之間的資料流,無需通過公共網際網路。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司擁有一個透過 Amazon Bedrock 自訂用來回答產品相關問題的基礎模型 (FM)。公司希望驗證模型對新類型問題的回應。公司需要上傳一個新資料集供 Amazon Bedrock 用於驗證。哪一個 AWS 服務符合這些需求？",
+    "options": [
+      "Amazon S3",
+      "Amazon EBS",
+      "Amazon EFS",
+      "AWS Snowcone"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon S3 是 Amazon Bedrock 用於存儲訓練和驗證資料集的標準存儲服務。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "哪一種提示攻擊會直接暴露大型語言模型 (LLM) 的設定行為？",
+    "options": [
+      "提示人格切換",
+      "利用友善和信任",
+      "忽略提示範本",
+      "取出提示範本"
+    ],
+    "correctAnswer": 3,
+    "explanation": "取出提示範本(Prompt template extraction)直接嘗試提取 LLM 的系統提示和設定,暴露其內部行為。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司想使用 Amazon Bedrock。公司需要檢視在使用 Amazon Bedrock 時公司應負責哪些安全面向。哪一個安全面向是公司需承擔的？",
+    "options": [
+      "修補並更新 Amazon Bedrock 的版本",
+      "保護承載 Amazon Bedrock 的基礎設施",
+      "保護公司資料在傳輸和靜態時的安全",
+      "在公司網路內部署 Amazon Bedrock"
+    ],
+    "correctAnswer": 2,
+    "explanation": "在 AWS 共同責任模型中,客戶負責保護自己的資料,包括傳輸中和靜態時的資料安全。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某社交媒體公司想使用大型語言模型 (LLM) 來摘要訊息。公司選了幾個 Amazon SageMaker JumpStart 上可用的 LLM。公司想比較這些模型的輸出毒性,並希望評估過程的操作負擔最低。哪一種策略可以達成？",
+    "options": [
+      "群眾外包評估",
+      "自動模型評估",
+      "使用人力工作者評估模型",
+      "從人類反饋中強化學習 (RLHF)"
+    ],
+    "correctAnswer": 1,
+    "explanation": "自動模型評估可以快速比較多個模型的輸出毒性,操作負擔最低且結果一致。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司正在測試一個基礎模型 (FM) 的安全性。在測試過程中,公司想繞過安全機制並生成有害內容。這是哪一種安全技巧的例子？",
+    "options": [
+      "透過模糊測試訓練資料尋找漏洞",
+      "拒絕服務 (DoS)",
+      "經授權的滲透測試",
+      "Jailbreak"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Jailbreak 是指嘗試繞過 AI 模型的安全限制和內容過濾器,使其生成本應被阻止的內容。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司需要使用 Amazon SageMaker 進行模型訓練和推論。公司必須遵守法規要求,在沒有網際網路存取的隔離環境中執行 SageMaker 工作。哪一個解決方案可滿足這些需求？",
+    "options": [
+      "使用 SageMaker Experiments 執行訓練和推論。",
+      "使用網路隔離執行 SageMaker 訓練和推論。",
+      "使用 SageMaker 地理空間功能為靜態資料加密。",
+      "為 SageMaker 工作關聯適當的 AWS IAM 角色。"
+    ],
+    "correctAnswer": 1,
+    "explanation": "SageMaker 的網路隔離功能可確保訓練和推論作業在沒有網際網路存取的環境中執行,符合法規要求。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某 ML 研究團隊開發自訂 ML 模型,模型產物將與其他團隊共享以整合到產品和服務中。ML 團隊保留模型訓練程式碼和資料。ML 團隊想建立一個機制,以便審核這些模型。團隊在發布自訂 ML 模型時應使用哪一種解決方案？",
+    "options": [
+      "建立包含相關資訊的文件並將其儲存在 Amazon S3。",
+      "使用 AWS AI Service Cards 以獲得透明度與理解。",
+      "建立 Amazon SageMaker Model Cards,包含預定用途以及訓練和推論細節。",
+      "建立模型訓練腳本並提交到 Git 儲存庫。"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Amazon SageMaker Model Cards 提供標準化的方式記錄模型的預期用途、訓練細節和性能指標,便於審核。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某軟體公司為客戶打造工具,該公司希望利用 AI 提高軟體開發生產力。哪一種解決方案可以滿足這些需求？",
+    "options": [
+      "使用二元分類模型生成程式碼評審。",
+      "在公司的開發者工具中安裝程式碼建議軟體。",
+      "安裝程式碼預測工具以預測潛在的程式碼問題。",
+      "使用自然語言處理 (NLP) 工具生成程式碼。"
+    ],
+    "correctAnswer": 3,
+    "explanation": "使用 NLP 工具(如 AI 程式碼生成器)可以從自然語言描述生成程式碼,顯著提高開發生產力。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某零售商想使用 Amazon SageMaker DeepAR 預測演算法預測未來幾週特定產品的需求。哪一種資料能滿足這一需求？",
+    "options": [
+      "文字資料",
+      "影像資料",
+      "時間序列資料",
+      "二進位資料"
+    ],
+    "correctAnswer": 2,
+    "explanation": "DeepAR 是一個時間序列預測演算法,需要歷史時間序列資料來預測未來趨勢。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某大型零售銀行希望開發一個 ML 系統,幫助風險管理團隊決定針對不同族群的貸款分配。為了開發一個無偏的 ML 模型,銀行應該做什麼？",
+    "options": [
+      "減少訓練資料集大小。",
+      "確保 ML 模型的預測與歷史結果一致。",
+      "為每個族群建立不同的 ML 模型。",
+      "測量訓練資料集中的類別不平衡並相應調整訓練流程。"
+    ],
+    "correctAnswer": 3,
+    "explanation": "測量和處理類別不平衡是減少模型偏差的關鍵步驟,確保模型對不同族群公平。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "下列哪一種提示技巧可以防止提示注入攻擊？",
+    "options": [
+      "對抗性提示 (Adversarial prompting)",
+      "零樣本提示 (Zero-shot prompting)",
+      "Least-to-most 提示",
+      "Chain-of-thought 提示"
+    ],
+    "correctAnswer": 0,
+    "explanation": "對抗性提示技術通過測試和強化模型對惡意輸入的抵抗力,可以幫助防止提示注入攻擊。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司已經微調了一個大型語言模型 (LLM),用於客服中心回答問題。公司想確定微調是否提高了模型的準確度。應使用哪一個指標來進行評估？",
+    "options": [
+      "精確率 (Precision)",
+      "首個 token 的時間",
+      "F1 分數",
+      "語音錯誤率"
+    ],
+    "correctAnswer": 2,
+    "explanation": "F1 分數結合了精確率和召回率,是評估分類任務(如問答系統)準確度的綜合指標。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司正在使用 Retrieval Augmented Generation (RAG) 搭配 Amazon Bedrock 和 Stable Diffusion 根據文字描述生成產品圖像。結果常常隨機且缺乏具體細節。公司想提高生成圖像的具體性。哪一種解決方案可以滿足這些需求？",
+    "options": [
+      "增加生成步數",
+      "使用 MASK_IMAGE_BLACK mask source 選項",
+      "提高 classifier-free guidance (CFG) 比例",
+      "增加提示強度"
+    ],
+    "correctAnswer": 2,
+    "explanation": "提高 CFG 比例可以使生成的圖像更緊密地遵循文字提示,提高具體性和相關性。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司希望部署一個基於大型語言模型 (LLM) 的聊天機器人,為客服代理提供對客戶查詢的即時上下文回應。公司將使用公司的政策作為知識庫。哪一種解決方案能以最具成本效益的方式滿足這些需求？",
+    "options": [
+      "在公司政策資料上重新訓練 LLM。",
+      "在公司政策資料上微調 LLM。",
+      "實作 Retrieval Augmented Generation (RAG) 以提供上下文回應。",
+      "在公司政策資料上進行預訓練並做資料擴增。"
+    ],
+    "correctAnswer": 2,
+    "explanation": "RAG 允許模型在回應時檢索相關文檔,無需重新訓練或微調,是最具成本效益的解決方案。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司想使用 AWS Glue 創建一個新的解決方案,但對 AWS Glue 的程式設計經驗有限。哪一項 AWS 服務可以幫助公司使用 AWS Glue？",
+    "options": [
+      "Amazon Q Developer",
+      "AWS Config",
+      "Amazon Personalize",
+      "Amazon Comprehend"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon Q Developer 是 AI 助手,可以提供程式碼建議和指導,幫助開發者使用 AWS 服務如 AWS Glue。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司正在開發一款利用手機相機診斷並治療昆蟲叮咬的行動 ML 應用程式。公司想使用來自不同性別、族群和全球各地的昆蟲叮咬照片組成多元資料集,來訓練影像分類模型。這個情境展示了負責任 AI 的哪一項原則？",
+    "options": [
+      "公平性",
+      "可解釋性",
+      "治理",
+      "透明度"
+    ],
+    "correctAnswer": 0,
+    "explanation": "使用多元資料集確保模型對不同人群都有良好表現,體現了 AI 公平性原則。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司正在開發一個用於貸款核准的 ML 模型。公司必須實施一套解決方案來檢測模型中的偏差,並且能夠解釋模型的預測。哪一個解決方案能滿足這些需求？",
+    "options": [
+      "Amazon SageMaker Clarify",
+      "Amazon SageMaker Data Wrangler",
+      "Amazon SageMaker Model Cards",
+      "AWS AI Service Cards"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon SageMaker Clarify 專門用於檢測模型偏差並提供模型預測的可解釋性分析。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司使用 Amazon Bedrock 開發了一個生成式文本摘要模型。公司將使用 Amazon Bedrock 的自動模型評估能力。公司應使用哪一個指標來評估模型的準確性？",
+    "options": [
+      "ROC 曲線下面積 (AUC) 分數",
+      "F1 分數",
+      "BERTScore",
+      "真實世界知識 (RWK) 分數"
+    ],
+    "correctAnswer": 2,
+    "explanation": "BERTScore 使用預訓練的 BERT 模型評估生成文本與參考文本的語義相似度,適合評估摘要品質。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "一名 AI 實踐者想根據花瓣長度、花瓣寬度、萼片長度及萼片寬度來預測花的分類。哪一種演算法符合這些需求？",
+    "options": [
+      "k 最近鄰 (k-NN)",
+      "k-mean",
+      "自迴歸整合移動平均 (ARIMA)",
+      "線性回歸"
+    ],
+    "correctAnswer": 0,
+    "explanation": "k-NN 是一個分類演算法,適合基於多個特徵(如花瓣和萼片尺寸)來預測類別。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司在 Amazon Bedrock 中使用自訂模型建立生成式 AI 應用。公司希望使用公司管理的加密金鑰來加密模型自訂作業產生的模型物件。哪一個 AWS 服務滿足這些需求？",
+    "options": [
+      "AWS 金鑰管理服務 (AWS KMS)",
+      "Amazon Inspector",
+      "Amazon Macie",
+      "AWS Secrets Manager"
+    ],
+    "correctAnswer": 0,
+    "explanation": "AWS KMS 允許客戶創建和管理自己的加密金鑰,用於加密 AWS 服務中的資料。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司想使用大型語言模型 (LLMs) 依據自然語言的程式註解生成程式碼。哪一項 LLM 功能能滿足這些需求？",
+    "options": [
+      "文本摘要",
+      "文本生成",
+      "文本補全",
+      "文本分類"
+    ],
+    "correctAnswer": 1,
+    "explanation": "文本生成功能允許 LLM 根據輸入(如程式註解)創建新的內容(如程式碼)。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司正在推出一個協助使用者學習外語的行動應用程式。該應用透過調用大型語言模型 (LLM) 讓文本更連貫。公司收集了多元的文本資料並補充了可讀性更高的版本範例。公司希望 LLM 的輸出與提供的範例相似。公司應使用哪一項指標來評估 LLM 是否達到這些要求？",
+    "options": [
+      "損失函數值",
+      "語意魯棒性",
+      "ROUGE 分數",
+      "文字生成的延遲"
+    ],
+    "correctAnswer": 2,
+    "explanation": "ROUGE 分數用於評估生成文本與參考文本的重疊程度,適合衡量輸出與範例的相似度。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司發現其基礎模型 (FM) 生成的影像與提示無關。公司希望調整提示技巧以減少不相關的影像。哪一種解決方案滿足這些需求？",
+    "options": [
+      "使用零樣本提示。",
+      "使用負面提示。",
+      "使用正面提示。",
+      "使用含糊提示。"
+    ],
+    "correctAnswer": 1,
+    "explanation": "負面提示明確指定不想要的元素,可以幫助模型避免生成不相關的內容。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司想利用大型語言模型 (LLM) 為公司產品生成簡潔且以功能為主的描述。哪一種提示工程技巧符合這些要求？",
+    "options": [
+      "建立一個涵蓋所有產品的提示,再編輯回應使其更具體、簡潔並符合每個產品。",
+      "為每個產品類別建立提示,突顯主要特色,並在每個提示中包含所需的輸出格式和長度。",
+      "在每個提示中加入多樣的產品特色以產生創意且獨特的描述。",
+      "提供詳細的產品專屬提示,以確保精確且客製化的描述。"
+    ],
+    "correctAnswer": 1,
+    "explanation": "為產品類別建立結構化提示並指定輸出格式和長度,可以最有效地生成一致且符合要求的描述。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司正在開發一個預測客戶流失的 ML 模型。該模型在訓練資料集上的表現良好,但在新資料上的預測不準確。哪一種解決方案可以解決此問題？",
+    "options": [
+      "降低正則化參數以增加模型複雜度。",
+      "提高正則化參數以降低模型複雜度。",
+      "為輸入資料新增更多特徵。",
+      "訓練模型更長時間。"
+    ],
+    "correctAnswer": 1,
+    "explanation": "這是過度擬合的典型症狀,提高正則化參數可以降低模型複雜度,改善泛化能力。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司正在導入智慧代理 (agents) 為其客戶提供對話式搜尋體驗。公司需要一項資料庫服務支援將生成式 AI 模型的嵌入 (embeddings) 作為向量存放於資料庫並可進行查詢。哪一個 AWS 服務符合這些需求？",
+    "options": [
+      "Amazon Athena",
+      "Amazon Aurora PostgreSQL",
+      "Amazon Redshift",
+      "Amazon EMR"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Aurora PostgreSQL 支援 pgvector 擴展,可以存儲和查詢向量嵌入,適合 AI 應用。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某金融機構正在利用基礎模型 (FM) 構建 AI 解決方案以進行貸款核准決策。出於安全與稽核目的,公司需要這些決策具有可解釋性。哪一個因素與 AI 解決方案決策的可解釋性相關？",
+    "options": [
+      "模型複雜度",
+      "訓練時間",
+      "超參數數量",
+      "部署時間"
+    ],
+    "correctAnswer": 0,
+    "explanation": "模型複雜度直接影響可解釋性,較簡單的模型通常更容易理解和解釋其決策過程。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某製藥公司想分析用戶對新藥物的評論,並為每種藥提供簡潔的總結。哪一種解決方案能滿足這些需求？",
+    "options": [
+      "使用 Amazon Personalize 建立時間序列預測模型來分析藥物評論。",
+      "使用 Amazon Bedrock 大型語言模型 (LLMs) 生成藥物評論摘要。",
+      "使用 Amazon SageMaker 建立分類模型,將藥物分類為不同群組。",
+      "使用 Amazon Rekognition 生成藥物評論摘要。"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon Bedrock 的 LLM 專門用於文本處理和摘要生成,是分析和總結評論的理想選擇。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司想為員工建立一個潛在客戶優先排序應用程式,供其聯繫潛在客戶。應用程式必須讓員工可以查看並根據領域知識和專業調整分配給不同變數的權重。哪一種 ML 模型類型符合這些需求？",
+    "options": [
+      "邏輯斯回歸模型",
+      "建立在主成分上的深度學習模型",
+      "k 最近鄰 (k-NN) 模型",
+      "神經網路"
+    ],
+    "correctAnswer": 0,
+    "explanation": "邏輯斯回歸模型的權重是可解釋和可調整的,允許使用者根據專業知識修改特徵權重。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "哪一種策略可以判定基礎模型 (FM) 是否有效滿足業務目標？",
+    "options": [
+      "將模型的表現與基準資料集進行比較。",
+      "分析模型的架構和超參數。",
+      "評估模型與特定用例的一致性。",
+      "測量模型部署所需的計算資源。"
+    ],
+    "correctAnswer": 2,
+    "explanation": "評估模型與實際業務用例的一致性是判斷其是否滿足業務目標的最直接方法。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司需要訓練一個 ML 模型來分類不同類型的動物圖像。公司擁有一個大型已標記圖像資料集,且不會再標記更多資料。公司應使用哪一種學習方法來訓練模型？",
+    "options": [
+      "監督式學習",
+      "無監督學習",
+      "強化學習",
+      "主動學習"
+    ],
+    "correctAnswer": 0,
+    "explanation": "監督式學習使用已標記的資料進行訓練,適合已有大量標記圖像的分類任務。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "ML 生命週期中的哪個階段決定合規性及法規需求？",
+    "options": [
+      "特徵工程",
+      "模型訓練",
+      "資料收集",
+      "業務目標識別"
+    ],
+    "correctAnswer": 3,
+    "explanation": "業務目標識別階段需要明確合規性和法規需求,以確保整個 ML 專案符合相關標準。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某食品服務公司想開發一個 ML 模型,以協助減少日常食物浪費並增加銷售收入。該公司需要持續提升模型的準確度。哪一種解決方案可滿足這些需求？",
+    "options": [
+      "使用 Amazon SageMaker 並以更新資料反覆訓練。",
+      "使用 Amazon Personalize 並以歷史資料反覆訓練。",
+      "使用 Amazon CloudWatch 分析客戶訂單。",
+      "使用 Amazon Rekognition 來最佳化模型。"
+    ],
+    "correctAnswer": 0,
+    "explanation": "Amazon SageMaker 支援使用新資料持續重新訓練模型,是提升模型準確度的標準解決方案。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司開發了一個預測房地產售價的 ML 模型。公司希望部署該模型以進行預測,而不必管理伺服器或基礎設施。哪一種解決方案可以滿足這些需求？",
+    "options": [
+      "在 Amazon EC2 執行個體上部署模型。",
+      "在 Amazon EKS 叢集上部署模型。",
+      "使用 Amazon CloudFront 與 Amazon S3 整合部署模型。",
+      "使用 Amazon SageMaker 端點部署模型。"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Amazon SageMaker 端點提供完全託管的模型部署服務,無需管理底層基礎設施。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司想開發一個 AI 應用,協助員工查詢未結案件、辨識特定案件的詳情,並存取案件文件。哪一種解決方案能滿足這些需求？",
+    "options": [
+      "使用 Agents for Amazon Bedrock 搭配 Amazon Fraud Detector 建立應用。",
+      "使用 Agents for Amazon Bedrock 搭配 Amazon Bedrock 知識庫建立應用。",
+      "使用 Amazon Personalize 搭配 Amazon Bedrock 知識庫建立應用。",
+      "使用 Amazon SageMaker 透過訓練新的 ML 模型建立應用。"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Agents for Amazon Bedrock 結合知識庫可以查詢文檔並提供智能回應,適合案件查詢系統。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某製造公司使用 AI 檢查產品並找出任何損壞或缺陷。公司使用的是哪一類型的 AI 應用？",
+    "options": [
+      "推薦系統",
+      "自然語言處理 (NLP)",
+      "電腦視覺",
+      "影像處理"
+    ],
+    "correctAnswer": 2,
+    "explanation": "電腦視覺是 AI 的一個分支,專門用於分析和理解圖像,包括缺陷檢測。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司想建立一個 ML 模型來預測顧客滿意度。公司需要完全自動化的模型調整。哪一個 AWS 服務符合這些需求？",
+    "options": [
+      "Amazon Personalize",
+      "Amazon SageMaker",
+      "Amazon Athena",
+      "Amazon Comprehend"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Amazon SageMaker 提供自動模型調整(Automatic Model Tuning)功能,可以自動優化超參數。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "在機器學習生命週期的後處理階段,公司可以使用哪一種技術來降低生成式 AI 應用中的偏差和有害內容？",
+    "options": [
+      "人類參與 (human-in-the-loop)",
+      "資料擴增",
+      "特徵工程",
+      "對抗性訓練"
+    ],
+    "correctAnswer": 0,
+    "explanation": "人類參與(HITL)在後處理階段可以審查和過濾模型輸出,減少偏差和有害內容。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某銀行微調了一個大型語言模型 (LLM) 以加速貸款審核流程。在對模型進行外部審核期間,公司發現模型在為特定族群批准貸款時比其他族群快。銀行應如何以最具成本效益的方式修正這個問題？",
+    "options": [
+      "納入更多多元的訓練資料,再次微調模型。",
+      "對微調模型使用 RAG 技術。",
+      "使用 AWS Trusted Advisor 檢查以消除偏差。",
+      "使用更多多元資料預訓練新的 LLM。"
+    ],
+    "correctAnswer": 0,
+    "explanation": "使用更多元的訓練資料重新微調現有模型是最具成本效益的方法,可以減少偏差。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司需要記錄對其 Amazon Bedrock API 的所有請求,並且必須將這些日誌安全保存 5 年,以最低成本保存。哪一個 AWS 服務與存儲類別的組合可滿足這些需求？(選兩項)",
+    "options": [
+      "AWS CloudTrail",
+      "Amazon CloudWatch",
+      "AWS Audit Manager",
+      "Amazon S3 Intelligent-Tiering",
+      "Amazon S3 Standard"
+    ],
+    "correctAnswer": 0,
+    "explanation": "正確答案包括：A. AWS CloudTrail (用於記錄 API 請求), D. Amazon S3 Intelligent-Tiering (以最低成本長期保存日誌)。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司每季進行預測,以決定如何優化營運以滿足預期需求。該公司使用 ML 模型進行這些預測。一名 AI 實踐者正在撰寫一份關於已訓練 ML 模型的報告,以向公司利害關係人提供透明度與可解釋性。為了符合透明度與可解釋性的要求,AI 實踐者應在報告中包含什麼？",
+    "options": [
+      "模型訓練的程式碼",
+      "部分依賴圖 (PDPs)",
+      "訓練的範例資料",
+      "模型收斂表"
+    ],
+    "correctAnswer": 1,
+    "explanation": "部分依賴圖(PDPs)清楚展示特徵如何影響模型預測,提供良好的可解釋性和透明度。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某律師事務所想要利用大型語言模型 (LLMs) 建立一個 AI 應用程式。該應用程式將閱讀法律文件並擷取文件中的重點。哪一種解決方案可滿足這些需求？",
+    "options": [
+      "建立自動化命名實體識別系統。",
+      "建立推薦引擎。",
+      "開發摘要聊天機器人。",
+      "開發多語言翻譯系統。"
+    ],
+    "correctAnswer": 2,
+    "explanation": "摘要聊天機器人可以讀取長篇文件並提取關鍵重點,最適合法律文件處理。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司想根據基因特徵將人類基因分為 20 類。該公司需要一個 ML 演算法,能夠記錄模型內部機制如何影響輸出。哪一種 ML 演算法符合這些要求？",
+    "options": [
+      "決策樹",
+      "線性回歸",
+      "邏輯斯回歸",
+      "神經網路"
+    ],
+    "correctAnswer": 0,
+    "explanation": "決策樹提供清晰的決策路徑和規則,可以完整記錄模型如何做出分類決定。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司建立了一個影像分類模型,用於從植物葉片照片預測植物疾病。該公司想評估模型正確分類了多少張圖片。應使用哪一個評估指標來衡量模型表現？",
+    "options": [
+      "決定係數 (R-squared)",
+      "準確率",
+      "均方根誤差 (RMSE)",
+      "學習率"
+    ],
+    "correctAnswer": 1,
+    "explanation": "準確率(Accuracy)直接測量正確分類的樣本比例,是評估分類模型的基本指標。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司正在使用預先訓練的大型語言模型 (LLM) 建立產品推薦聊天機器人。該公司需要 LLM 的輸出簡短且以特定語言撰寫。哪一種解決方案能使 LLM 的回應品質符合公司的期望？",
+    "options": [
+      "調整提示。",
+      "選擇不同大小的 LLM。",
+      "提高溫度值。",
+      "提高 Top K 值。"
+    ],
+    "correctAnswer": 0,
+    "explanation": "調整提示(包括指定語言和長度要求)是控制 LLM 輸出格式和內容的最直接方法。",
+    "category": "AWS AI 證照考試"
+  },
+  {
+    "questionText": "某公司在生產環境中使用 Amazon SageMaker 作為其 ML 管線。該公司的輸入資料大小高達 1 GB,處理時間長達 1 小時。公司需要接近即時的延遲。哪一種 SageMaker 推論選項符合這些需求？",
+    "options": [
+      "即時推論",
+      "無伺服器推論",
+      "非同步推論",
+      "批次轉換"
+    ],
+    "correctAnswer": 2,
+    "explanation": "非同步推論適合處理大型資料和長時間處理的請求,同時提供接近即時的回應機制。",
+    "category": "AWS AI 證照考試"
+  }
+]

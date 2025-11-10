@@ -1,0 +1,1202 @@
+[
+  {
+    "questionText": "一家電子商務公司希望透過為每位使用者客製化結果，來改善搜尋引擎的推薦功能。哪一個 AWS 服務能滿足這些需求？",
+    "options": [
+      "Amazon Personalize",
+      "Amazon Kendra",
+      "Amazon Rekognition",
+      "Amazon Transcribe"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Amazon Personalize 是一項全受管的機器學習服務，專門用於建立個人化推薦系統，能為每位使用者客製化結果。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "一家醫院正在開發一個 AI 系統，以根據病歷和醫學影像協助醫生診斷疾病。為了符合法規，敏感的病患資料不能離開其所在國家。哪一項資料治理策略能確保合規並保護病患隱私？",
+    "options": [
+      "資料駐留",
+      "資料品質",
+      "資料可發現性",
+      "資料增強"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "資料駐留 (Data Residency) 是一種資料治理策略，要求資料儲存在特定的地理位置（例如國家境內），以符合當地的法規要求。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司需要使用高度可擴展的 AWS 服務來監控其 ML 系統的效能。哪一 AWS 服務能滿足這些需求？",
+    "options": [
+      "Amazon CloudWatch",
+      "AWS CloudTrail",
+      "AWS Trusted Advisor",
+      "AWS Config"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Amazon CloudWatch 是一項監控與可觀測性服務，用於收集指標、日誌並設定警示，非常適合用來監控 ML 系統的效能。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "一名 AI 實務人員正在為 Amazon Titan 模型設計提示。該模型托管在 Amazon Bedrock。這名實務人員使用模型來解決數值推理挑戰。他在提示末尾添加了以下語句：「要求模型通過一步步解釋其推理來展示其解題過程。」這使用了哪種提示工程技術？",
+    "options": [
+      "連鎖思維提示",
+      "提示注入",
+      "少量示例提示",
+      "提示模板化"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "連鎖思維 (Chain-of-Thought, CoT) 提示是一種技術，透過要求模型「一步步解釋其推理」，引導模型分解複雜問題，從而提高其在推理任務上的準確性。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "哪個 AWS 服務可以提供基礎模型 (FM)，以協助使用者建立並擴展生成式 AI 應用程式？",
+    "options": [
+      "Amazon Q Developer",
+      "Amazon Bedrock",
+      "Amazon Kendra",
+      "Amazon Comprehend"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Amazon Bedrock 是一項全受管服務，提供來自多個頂尖 AI 公司的基礎模型 (FM) API，讓使用者能輕鬆建立和擴展生成式 AI 應用。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司正在為視障使用者開發一款行動應用程式。此應用必須能聽懂使用者的語音，並提供語音回應。哪個方案能滿足這些需求？",
+    "options": [
+      "使用深度學習神經網路進行語音辨識",
+      "構建機器學習模型以搜尋數值資料的模式",
+      "使用生成式 AI 摘要生成類似人類的文本",
+      "建立自訂模型進行影像分類和辨識"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "應用程式需要「聽懂使用者的語音」（語音辨識）並「提供語音回應」（語音合成）。深度學習神經網路是現代語音辨識 (ASR) 系統的核心技術。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司希望提升大型語言模型 (LLM) 在複雜問題解決任務中的回應品質。這些任務需要詳細的推理和逐步解釋過程。哪種提示工程技術可滿足這些需求？",
+    "options": [
+      "少量示例提示",
+      "零示例提示",
+      "定向刺激提示",
+      "連鎖思維提示"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "連鎖思維 (Chain-of-Thought, CoT) 提示專門用於處理需要「詳細推理和逐步解釋過程」的複雜任務，它引導模型模仿人類的思考鏈。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司想透過使用最新資料來保持其基礎模型 (FM) 的相關性。公司希望實施一種包含定期更新 FM 的模型訓練策略。哪個方案能滿足這些需求？",
+    "options": [
+      "批次學習",
+      "持續預訓練",
+      "靜態訓練",
+      "潛在訓練"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "靜態訓練 (Static Training) 是指模型在部署後不會持續學習。公司若要保持模型相關性，會採用此策略，並*定期*（例如每季）用全新的資料集*重新執行*靜態訓練，以產生新版本的模型。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "以下哪一選項是 AI 治理框架在建立信任和部署以人為中心的 AI 技術時的特徵？",
+    "options": [
+      "在業務部門之間擴展計畫以創造長期商業價值",
+      "確保與商業標準、收入目標和利害關係人期望保持一致",
+      "克服挑戰以推動業務轉型和成長",
+      "制定有關資料、透明度、負責任 AI 和合規性的政策和指南"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "AI 治理框架的核心是建立信任和確保負責任的實踐，這需要制定關於資料處理、模型透明度、負責任 AI 原則（如公平性）和法規遵循的明確政策和指南。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某電商公司正在使用生成式 AI 聊天機器人回覆客戶詢問。公司希望衡量該聊天機器人對公司營運的財務影響。公司應使用哪一指標？",
+    "options": [
+      "處理的客戶詢問數",
+      "訓練 AI 模型的成本",
+      "每個客戶對話的成本",
+      "平均處理時間（AHT）"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "要衡量*財務影響*，公司需要計算營運成本。「每個客戶對話的成本」是一個直接的營運指標，可衡量聊天機器人相較於人工客服的財務效益（成本節省）。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司希望根據客戶的人口統計資料和購買模式為其客戶分群。公司應使用哪種演算法來滿足此需求？",
+    "options": [
+      "K 最近鄰 (k-NN)",
+      "K-均值 (K-means)",
+      "決策樹",
+      "支援向量機"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "K-均值 (K-means) 是一種非監督式學習中的「分群」演算法，專門用於將資料點（如客戶）根據其特徵（人口統計資料、購買模式）分組成不同的群組。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司的大型語言模型 (LLM) 出現幻覺。公司應如何減少幻覺發生？",
+    "options": [
+      "設置 Amazon Bedrock 的代理來監督模型訓練",
+      "使用資料前處理並移除任何會導致幻覺的資料",
+      "降低模型的溫度推理參數",
+      "使用經過訓練以避免幻覺的基礎模型 (FM)"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "溫度 (Temperature) 是一個推理參數，控制模型輸出的隨機性。較高的溫度會產生更有創意的回應，但也更容易產生幻覺。降低溫度（例如趨近於 0）會使模型的輸出更加確定和基於事實，從而減少幻覺。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司正在 Amazon Bedrock 上使用大型語言模型 (LLM) 建立聊天機器人。此聊天機器人處理客戶支援請求。為了解決一個請求，客戶與聊天機器人必須互動數次。哪種方案可讓 LLM 使用先前客戶訊息的內容？",
+    "options": [
+      "啟用模型調用日誌以收集訊息",
+      "將訊息添加到模型提示中",
+      "使用 Amazon Personalize 來保存對話歷史",
+      "為 LLM 使用預配置吞吐量"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "基礎模型本身是無狀態的。為了讓模型「記住」先前的對話，應用程式必須在每一次新的調用中，將完整的對話歷史（先前的客戶訊息和模型回應）作為上下文重新添加到提示 (prompt) 中。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "當客戶致電客服中心時，公司員工會根據客戶所在地提供產品描述和推薦。這些推薦基於客戶所在地區。公司希望使用基礎模型 (FM) 來自動化此過程。哪一項 AWS 服務符合這些需求？",
+    "options": [
+      "Amazon Macie",
+      "Amazon Transcribe",
+      "Amazon Bedrock",
+      "Amazon Textract"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Amazon Bedrock 提供了基礎模型 (FM) 的 API，公司可以利用這些 FM 的強大上下文理解和生成能力，來自動化理解客戶所在地並生成相應的產品推薦，以取代人工流程。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司想要將客服電子郵件訊息上傳至 Amazon S3，用於開發商業分析應用程式。這些訊息有時包含敏感資料。公司希望每次發現敏感資訊時都能接收警報。哪一方案以最少的開發工作即可完全自動化敏感資訊檢測流程？",
+    "options": [
+      "設定 Amazon Macie 以偵測上傳到 Amazon S3 的文件中的敏感資訊",
+      "使用 Amazon SageMaker 端點部署大型語言模型 (LLM) 來遮罩敏感資料",
+      "開發多個正則表達式模式以偵測敏感資料，並在 Amazon SageMaker 筆記本上提供這些模式",
+      "要求客戶避免在電子郵件中分享敏感資訊"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Amazon Macie 是一項全受管的資料安全服務，它使用機器學習自動發現、分類和保護 S3 中的敏感資料，並能在發現時發出警報，這完全符合需求且開發工作量最少。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "下列哪一項是使用 Amazon SageMaker Model Cards 記錄 AI 模型的好處？",
+    "options": [
+      "提供模型功能的視覺化摘要",
+      "標準化模型的用途、效能和限制等資訊",
+      "減少模型的整體計算需求",
+      "實體保存模型以供存檔"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Amazon SageMaker Model Cards 是一種用於記錄模型詳細資訊的工具，它提供了一個標準化模板來記錄模型的預期用途、效能指標、訓練細節和限制，以促進透明度、治理和負責任 AI。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "在基礎模型 (FM) 效能的情境中，F1 分數衡量的是什麼？",
+    "options": [
+      "模型的精確率和召回率",
+      "模型生成回應的速度",
+      "運行模型的財務成本",
+      "模型計算的能效"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "F1 分數 (F1 Score) 是模型精確率 (Precision) 和召回率 (Recall) 的調和平均數。它在評估分類任務（如 NLP 任務）時特別有用，因為它同時考慮了假陽性和假陰性。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司部署了一個 AI/ML 解決方案，協助客服人員回答常見問題。這些問題可能隨時間改變。公司希望讓客服人員能詢問問題並自動收到常見問題的答案。哪一策略能最具成本效益地滿足這些需求？",
+    "options": [
+      "定期微調模型",
+      "使用上下文資料訓練模型",
+      "使用上下文資料進行預訓練並對模型進行基準測試",
+      "結合檢索增強生成 (RAG) 和提示工程技術"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "由於常見問題 (FAQ) 會隨時間改變，定期微調模型的成本很高。檢索增強生成 (RAG) 允許模型從外部知識庫（儲存最新的 FAQ）中檢索資訊，並結合提示工程來生成答案。這比不斷重新訓練模型更具成本效益和即時性。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司建立了一個 AI 驅動的履歷篩選系統。公司使用一個大型資料集訓練模型，但該資料集中的履歷不代表所有族群。這種情況涉及負責任 AI 的哪一核心面向？",
+    "options": [
+      "公平性",
+      "可解釋性",
+      "隱私和安全",
+      "透明度"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "如果訓練資料集（履歷）未能代表所有族群，模型可能會學習到資料中的既有偏見，導致對某些群體產生不公平的篩選結果。這直接觸及了負責任 AI 中的「公平性」原則。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某全球金融公司開發了一個 ML 應用來分析股市資料並提供趨勢。公司希望持續監控應用程式的開發階段，以確保遵守公司政策和產業法規。哪些 AWS 服務可協助公司評估合規需求？（選擇兩項。）",
+    "options": [
+      "AWS Audit Manager",
+      "AWS Config",
+      "Amazon Inspector",
+      "Amazon CloudWatch",
+      "AWS CloudTrail"
+    ],
+    "correctAnswer": [
+      0,
+      1
+    ],
+    "explanation": "AWS Audit Manager 專門用於持續稽核您的 AWS 使用情況，以簡化合規性評估和報告。AWS Config 則用於評估、稽核和檢查 AWS 資源的組態，確保其持續符合公司政策和行業法規。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司希望提升其生成式 AI 應用程式的回應準確度。該應用程式使用 Amazon Bedrock 上的基礎模型 (FM)。哪個方案能以最具成本效益的方式滿足這些需求？",
+    "options": [
+      "微調 FM",
+      "重新訓練 FM",
+      "訓練新的 FM",
+      "使用提示工程"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "提示工程 (Prompt Engineering) 是指透過精心設計輸入提示 (prompt) 來引導模型產生更準確、更相關的回應。相較於微調或重新訓練模型，這通常是提升回應品質最具成本效益的第一步。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司希望使用 ML 模型來識別社群媒體貼文評論中的有害語言。公司不會使用標記資料來訓練模型。公司應採用哪一策略來識別有害語言？",
+    "options": [
+      "使用 Amazon Rekognition 審查功能",
+      "使用 Amazon Comprehend 的毒性偵測功能",
+      "使用 Amazon SageMaker 內建演算法來訓練模型",
+      "使用 Amazon Polly 監控評論"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Amazon Comprehend 是一項自然語言處理 (NLP) 服務，提供預訓練的模型來執行任務，包括「毒性偵測」，它可以在不需要自行標記資料的情況下識別有害語言。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "一家媒體公司想分析觀眾行為和人口統計資料，以推薦個人化內容。公司希望在其生產環境中部署自訂的 ML 模型，並且希望觀察模型品質是否會隨時間漂移。哪一個 AWS 服務或功能可以滿足這些需求？",
+    "options": [
+      "Amazon Rekognition",
+      "Amazon SageMaker Clarify",
+      "Amazon Comprehend",
+      "Amazon SageMaker Model Monitor"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Amazon SageMaker Model Monitor 專門用於監控生產環境中的機器學習模型，它可以偵測模型品質、資料品質、特徵歸因等方面的「漂移」，確保模型效能隨時間保持穩定。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司使用 AWS 服務部署 AI/ML 模型。公司希望對模型的決策過程提供透明度，並提供模型輸出的解釋。哪一項 AWS 服務或功能可以滿足這些需求？",
+    "options": [
+      "Amazon SageMaker Model Cards",
+      "Amazon Rekognition",
+      "Amazon Comprehend",
+      "Amazon Lex"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Amazon SageMaker Model Cards 提供了一個標準化的框架來記錄模型的詳細資訊，包括其預期用途、效能指標、訓練資料和限制，這有助於提高模型的透明度和可解釋性。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某製造公司希望用多種語言撰寫產品描述。哪一個 AWS 服務可以自動化這項任務？",
+    "options": [
+      "Amazon Translate",
+      "Amazon Transcribe",
+      "Amazon Kendra",
+      "Amazon Polly"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Amazon Translate 是一項神經機器翻譯服務，可以快速、高品質地將文本從一種語言翻譯成多種其他語言，非常適合自動化撰寫多語言產品描述。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "哪一項 AWS 功能會記錄 ML 實例資料的詳細資訊，以用於治理和報告？",
+    "options": [
+      "Amazon SageMaker Model Cards",
+      "Amazon SageMaker Debugger",
+      "Amazon SageMaker Model Monitor",
+      "Amazon SageMaker JumpStart"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Amazon SageMaker Model Cards 專門用於記錄和報告 ML 模型的生命週期資訊，包括訓練資料、效能指標、預期用途和限制，是實現治理和合規報告的關鍵功能。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某金融公司正在利用 ML 協助一些業務。下列哪一選項是生成式 AI 模型的用途？",
+    "options": [
+      "摘要客戶投訴",
+      "根據產品使用情況對客戶進行分類",
+      "根據投資類型對客戶進行區隔",
+      "預測特定產品的收益"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "生成式 AI（如 LLM）的核心能力之一是理解和生成文本。「摘要客戶投訴」是一項典型的生成式 AI 任務。而 B、C（分類/區隔）和 D（預測）是傳統的預測性 ML 任務。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某醫療公司希望開發一個 AI 應用，能存取結構化的病患記錄、擷取相關資訊並生成簡潔的摘要。哪一方案能滿足這些需求？",
+    "options": [
+      "使用 Amazon Comprehend Medical 提取相關醫療實體和關係，應用基於規則的邏輯來組織和格式化摘要。",
+      "使用 Amazon Personalize 分析病患互動模式，將輸出與通用文本摘要工具整合。",
+      "使用 Amazon Textract 將掃描文件轉換為數位文本，設計關鍵字擷取系統來產生摘要。",
+      "實作 Amazon Kendra 提供醫療記錄的可搜尋索引，使用基於範本的系統來格式化摘要。"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Amazon Comprehend Medical 專門用於從醫療文本（如病歷）中提取醫療實體（如藥物、病症）和關係。擷取這些關鍵資訊後，即可應用邏輯來生成結構化的摘要。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "在 AI 的情境中，以下哪一選項描述了嵌入 (embeddings)？",
+    "options": [
+      "壓縮大型資料集的方法",
+      "用於保護敏感資料的加密方法",
+      "用於視覺化高維資料的方法",
+      "在降維空間中表示資料的數值方法"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "嵌入 (Embeddings) 是將高維度的資料（如文字、圖片）轉換為低維度的數值向量（一組數字）的方法。這些向量能捕捉資料的語義關係，使機器能夠理解和處理它們。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司正在建立一個 AI 應用程式，用以摘要不同長度的書籍。在測試期間，應用無法摘要某些書籍。造成這些書籍無法被摘要的原因是什麼？",
+    "options": [
+      "溫度設定過高",
+      "選定的模型不支援微調",
+      "Top P 值過高",
+      "輸入的標記數超過模型的上下文大小"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "每個大型語言模型都有一個「上下文大小」（Context Window），即它一次能處理的最大標記（token）數量。如果一本書的長度（轉換為標記後）超過了這個限制，模型就無法處理完整的輸入，導致摘要失敗。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "一家航空公司想建立一個對話式 AI 助理，以回答關於航班時間表、訂票和付款的客戶問題。公司想使用大型語言模型 (LLM) 和知識庫來建立一個基於文本的聊天介面。哪一個方案可以以最少的開發工作滿足這些需求？",
+    "options": [
+      "在 Amazon SageMaker Autopilot 上訓練模型",
+      "使用 Amazon Bedrock 開發檢索增強生成 (RAG) 代理",
+      "使用 Amazon Q Developer 建立 Python 應用程式",
+      "在 Amazon SageMaker JumpStart 上微調模型"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "使用 LLM 和「知識庫」是檢索增強生成 (RAG) 的典型場景。Amazon Bedrock 提供了 Agents 功能，可以簡化 RAG 流程的開發，協調 LLM、知識庫和 API 調用，從而以最少的開發工作建立對話式助理。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "在自然語言處理 (NLP) 中，分詞 (tokenization) 的用途是什麼？",
+    "options": [
+      "加密文本資料",
+      "壓縮文本文件",
+      "將文本拆分成較小的單位以便處理",
+      "翻譯不同語言的文本"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "分詞 (Tokenization) 是 NLP 的一個基本步驟，它將原始的文本字串（如一個句子）分解成更小的單位，稱為「標記」(token)，例如單詞或子詞。這使得模型能夠更容易地處理和理解語言。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "以下哪一項是基於 Transformer 的語言模型的特徵？",
+    "options": [
+      "基於 Transformer 的語言模型使用卷積層在輸入上應用濾波器以透過濾波視圖捕捉局部模式",
+      "基於 Transformer 的語言模型只能處理文本資料",
+      "基於 Transformer 的語言模型使用自注意力機制來捕捉上下文關係",
+      "基於 Transformer 的語言模型以循環迭代的方式逐元素處理資料序列"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Transformer 模型的核心創新是「自注意力機制」(Self-Attention)。這種機制使模型能夠在處理序列中的某個元素時，權衡序列中所有其他元素的重要性，從而有效地捕捉長距離的上下文關係。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某金融公司使用 AI 系統來獲取客戶的信用評分，作為貸款申請流程的一部分。公司打算擴展到不同地理區域的新市場，必須確保能在該地區運作。公司應審查哪些合規法規？",
+    "options": [
+      "當地的健康資料保護法",
+      "當地的支付卡資料保護法",
+      "當地的教育隱私法",
+      "當地的演算法問責法律"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "使用 AI 進行信用評分和貸款決策，直接關係到演算法的公平性、透明度和問責制。許多地區（如歐盟的 AI Act）已經或正在制定「演算法問責法律」，專門規範這類高風險 AI 系統的部署。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司對其生成式 AI 應用使用 Amazon Bedrock。公司希望使用 Amazon Bedrock Guardrails 來偵測並過濾有害的使用者輸入和模型生成的輸出。Guardrails 可以過濾哪些內容類別？（選擇兩項。）",
+    "options": [
+      "仇恨",
+      "政治",
+      "暴力",
+      "賭博",
+      "宗教"
+    ],
+    "correctAnswer": [
+      0,
+      2
+    ],
+    "explanation": "Amazon Bedrock Guardrails 的內容過濾器預設配置了四個類別的過濾功能：仇恨 (Hate)、侮辱 (Insults)、色情 (Sexual) 和暴力 (Violence)。政治、賭博和宗教不包含在預設的有害內容類別中。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "下列哪一情境說明在生成式 AI 模型中提示工程的潛在風險和限制？",
+    "options": [
+      "提示工程無法確保模型總是產生一致且確定性的輸出，因此不需要驗證",
+      "提示工程可能讓模型暴露於提示注入攻擊等漏洞",
+      "妥善設計的提示可以降低但不能消除資料投毒或模型劫持的風險",
+      "提示工程無法確保模型在處理真實世界資料時能一致地生成高度可靠的輸出"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "提示注入 (Prompt Injection) 是一種攻擊手段，攻擊者透過精心設計的輸入提示（例如，要求模型忽略先前的所有指令），來繞過模型的安全防護或使其執行非預期的任務。這是提示工程面臨的一個主要安全風險。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "一家出版公司建立了基於檢索增強生成 (RAG) 的解決方案，讓使用者能與已發佈的內容互動。新內容每天都在發佈，公司希望為使用者提供近乎即時的體驗。為了滿足這些需求，RAG 流程中的哪些步驟應透過離線批次處理執行？(選擇兩項)",
+    "options": [
+      "生成內容嵌入",
+      "生成用戶查詢的嵌入",
+      "建立搜尋索引",
+      "檢索相關內容",
+      "為使用者生成回應"
+    ],
+    "correctAnswer": [
+      0,
+      2
+    ],
+    "explanation": "在 RAG 流程中，將新內容（文件）轉換為向量嵌入並將其存入向量資料庫（建立/更新搜尋索引）是資料準備步驟。這些步驟計算量大，適合在使用者查詢*之前*透過離線批次處理（例如每天晚上）執行。而 B, D, E 都是在使用者*發出查詢時*即時執行的。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "哪一種技術會將複雜任務拆分為較小的子任務，並依序傳送給大型語言模型 (LLM)？",
+    "options": [
+      "單次提示",
+      "提示串接",
+      "思維樹",
+      "檢索增強生成 (RAG)"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "提示串接 (Prompt Chaining) 是一種技術，它將一個複雜的大任務分解為多個較小的、連續的子任務。前一個子任務的 LLM 輸出會被用作後一個子任務的 LLM 輸入，像鏈條一樣串接起來。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某位 AI 實務人員需要提高自然語言生成模型的準確度。該模型使用快速變化的庫存資料。哪一技術可以提升模型的準確度？",
+    "options": [
+      "遷移學習",
+      "聯邦學習",
+      "檢索增強生成 (RAG)",
+      "單次提示"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "庫存資料是「快速變化」的外部知識。檢索增強生成 (RAG) 允許模型在生成回應之前，先從外部知識庫（如庫存資料庫）中檢索最新資訊。這使模型能夠提供基於即時資料的準確回應，而無需重新訓練。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司想與多個研究機構合作開發 AI 模型。公司需要標準化的文件來追蹤模型版本並記錄模型開發。哪一方案可以滿足這些需求？",
+    "options": [
+      "使用 Git 追蹤模型變更",
+      "使用 Amazon Fraud Detector 追蹤模型變更",
+      "使用 Amazon SageMaker Model Cards 追蹤模型變更",
+      "使用 Amazon Comprehend 追蹤模型變更"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "Amazon SageMaker Model Cards 提供了一個標準化的文件模板，專門用於記錄模型開發生命週期中的所有重要資訊（如版本、效能、限制、訓練資料），非常適合用於跨團隊協作和治理。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司使用多個 ML 模型，希望識別原始模型品質的變化，以便及時解決問題。哪一 AWS 服務或功能能滿足這些需求？",
+    "options": [
+      "Amazon SageMaker JumpStart",
+      "Amazon SageMaker HyperPod",
+      "Amazon SageMaker Data Wrangler",
+      "Amazon SageMaker Model Monitor"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "Amazon SageMaker Model Monitor 專門用於監控生產環境中的 ML 模型，它可以自動偵測「模型品質」（預測與實際結果的差異）的漂移或變化，並在效能下降時發出警報。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "在檢索增強生成 (RAG) 中，分塊 (chunking) 的目的為何？",
+    "options": [
+      "透過儲存文本的部分或片段來避免大型文本文件的資料庫儲存限制",
+      "提高效率，避免需要將大型文本轉換為向量嵌入",
+      "提高從向量索引檢索出的結果的上下文相關性",
+      "透過儲存文本的部分或片段來降低儲存成本"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "分塊 (Chunking) 是將大文件（如 PDF）切割成較小的、語義完整的文本塊。這樣做可以確保生成的向量嵌入更集中於特定主題，從而提高向量搜尋的精確度，使檢索到的上下文與使用者查詢更相關。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司正在開發使用生成式 AI 的編輯助手應用程式。在試點階段，使用率低，應用效能不是問題。公司無法預測完全部署後的使用情況，並希望將成本最小化。哪一解決方案能滿足這些需求？",
+    "options": [
+      "使用 GPU 支援的 Amazon EC2 執行個體",
+      "使用具有預配置吞吐量的 Amazon Bedrock",
+      "使用具有按需吞TB. 量的 Amazon Bedrock",
+      "使用 Amazon SageMaker JumpStart"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "「按需吞吐量」(On-Demand) 是一種即用即付的定價模式。在試點階段和使用情況無法預測時，按需付費是成本最低的選擇，因為公司只需為實際使用的推論量付費，而無需承諾固定的「預配置吞吐量」。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司在 Amazon Bedrock 上部署了一個檢索增強生成 (RAG) 應用，用於收集財經新聞並在每日新聞通訊中傳送。近期用戶反映通訊內容含有政治影響的想法。哪一項 Amazon Bedrock Guardrail 可以識別並過濾這類內容？",
+    "options": [
+      "字詞過濾器",
+      "禁用主題",
+      "敏感資訊過濾器",
+      "內容過濾器"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "Amazon Bedrock Guardrails 中的「禁用主題」(Denied Topics) 功能允許開發者定義一組不希望模型討論的主題（例如此處的「政治」）。Guardrail 會在偵測到這些主題時阻止模型生成回應。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某金融公司正在開發一個欺詐檢測系統，用於標示信用卡交易中的潛在欺詐案例。員工將評估被標示的欺詐案例。公司希望盡量減少員工在審核實際上不是欺詐的案例所花的時間。哪一評估指標最符合這些需求？",
+    "options": [
+      "召回率",
+      "準確率",
+      "精確率",
+      "提升圖"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "「精確率」(Precision) 衡量的是「所有被模型標示為欺詐的案例中，有多少*真正*是欺詐」。高精確率意味著模型標示的案例大多是正確的，從而減少了員工審核「假警報」（實際上不是欺詐）所浪費的時間。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司設計了一個 AI 驅動的代理人，以根據產品手冊回答客戶詢問。哪一策略可以提升客戶對該代理人回應的信心？",
+    "options": [
+      "在回應中寫出信心等級",
+      "在回應中包含引用的產品手冊連結",
+      "設計一個看起來像電腦的代理人頭像",
+      "訓練代理人以公司的語言風格回應"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "在回應中包含「引用來源」（例如產品手冊的連結或頁碼）是一種提高透明度和可信度的關鍵策略。這讓客戶可以自行驗證答案的來源，從而提升對代理人回應的信心。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某醫院開發了一個 AI 系統，為病人提供個人化的治療建議。AI 系統必須提供建議背後的理由，並讓醫生和病人都能取得這些見解。這種情況呈現了哪一項以人為本的設計原則？",
+    "options": [
+      "可解釋性",
+      "隱私與安全",
+      "公平性",
+      "資料治理"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "「可解釋性」(Explainability) 是指 AI 系統能夠以人類可理解的方式「提供建議背後的理由」。這對於高風險領域（如醫療）至關重要，能讓醫生和病人建立信任並驗證 AI 的決策。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "以下哪一敘述呈現了在自然語言處理 (NLP) 任務中使用檢索增強生成 (RAG) 的優勢？",
+    "options": [
+      "RAG 可以利用外部知識來源來生成更準確且更具資訊性的回應",
+      "RAG 用於提升語言模型訓練的速度",
+      "RAG 主要用於語音辨識任務",
+      "RAG 是電腦視覺任務中的資料增強技術"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "RAG (Retrieval-Augmented Generation) 的核心優勢是將 LLM 的生成能力與外部知識庫（如文件、資料庫）相結合。這使模型能夠存取其訓練資料之外的即時、特定領域的資訊，從而生成更準確、更具上下文的回應。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司透過微調 Amazon Bedrock 的現有大型語言模型 (LLM) 建立了一個自訂模型。公司希望將此模型部署到生產環境，並用於處理每分鐘固定速率的請求。哪一方案最具成本效益？",
+    "options": [
+      "使用 Amazon EC2 計算最佳化執行個體部署模型",
+      "在 Amazon Bedrock 上使用按需吞吐量來部署模型",
+      "將模型存放在 Amazon S3 中，並使用 AWS Lambda 來託管模型",
+      "為該模型購買 Amazon Bedrock 的預配置吞吐量"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "對於「每分鐘固定速率的請求」，即穩定且可預測的流量，「預配置吞吐量」(Provisioned Throughput) 是最具成本效益的選擇。公司可以購買所需的處理能力，相較於按需付費（適用於不可預測的流量），單位請求的成本更低。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "哪一種技術涉及在帶標籤的資料集上訓練 AI 模型，以使模型適應特定行業術語和需求？",
+    "options": [
+      "資料增強",
+      "微調",
+      "模型量化",
+      "持續預訓練"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "微調 (Fine-Tuning) 是一個過程，它採用一個已經預訓練好的基礎模型，然後在一個較小的、特定任務的「帶標籤資料集」（例如特定行業術語）上進一步訓練，使模型適應該特定領域的需求。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司正在使用 Amazon Bedrock Agents 為其應用建立代理人。代理人運作良好，但公司想透過提供一些特定範例來提升代理人的準確度。哪一方案可以達成？",
+    "options": [
+      "修改代理人的進階提示以納入這些範例",
+      "為代理人建立包含這些範例的 Guardrail",
+      "使用 Amazon SageMaker Ground Truth 為這些範例標記",
+      "在 AWS Lambda 中執行腳本將這些範例新增至訓練資料集"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Amazon Bedrock Agents 允許透過「進階提示」來自訂代理人的行為。開發者可以在提示中提供特定範例（一種少量示例提示, Few-shot Prompting），以指導代理人如何更準確地回應或執行任務。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "在機器學習運營 (MLOps) 中使用基礎設施即程式碼 (IaC) 的好處是什麼？",
+    "options": [
+      "IaC 省略了超參數調整的需要",
+      "IaC 總是配置強大的運算執行個體，有助於訓練更精確的模型",
+      "IaC 簡化了在雲端環境中部署可擴展且一致的 ML 工作負載",
+      "IaC 僅部署低成本執行個體，從而最小化總體支出"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "基礎設施即程式碼 (IaC) 允許團隊使用程式碼（如 CloudFormation, Terraform）來定義和管理基礎設施。在 MLOps 中，這確保了從開發到生產的每個環境都是「一致的」，並且可以「可擴展地」和可重複地部署 ML 工作負載。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司想微調基礎模型 (FM)，以回答特定領域的問題。公司想使用基於指令的微調方法。公司應如何準備訓練資料？",
+    "options": [
+      "收集公司內部文件和行業特定資料，將其合併為一個檔案",
+      "從各種線上來源收集公司外部評論，並手動將每條評論標記為正面或負面",
+      "建立問題與答案對，專門涵蓋公司行業領域相關的主題",
+      "建立少量示例提示，指示模型只回答領域知識"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "「基於指令的微調」(Instruction-based fine-tuning) 需要一個包含「提示」和「理想回應」的資料集。對於問答任務，「建立問題與答案對」是準備此類訓練資料的標準方法，教導模型如何回應特定領域的問題。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "在 AWS 上訓練 AI 模型時，哪一種 ML 技術可確保資料合規與隱私？",
+    "options": [
+      "強化學習",
+      "遷移學習",
+      "聯邦學習",
+      "非監督式學習"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "聯邦學習 (Federated Learning) 是一種分散式機器學習技術，它允許模型在本地資料（例如在用戶的手機或本地伺服器）上進行訓練，而無需將原始資料集中上傳到雲端。這確保了資料隱私和合規性，因為原始資料永遠不會離開其所在地。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某製造公司有一個應用程式從公開來源接收消費者投訴。該應用使用複雜的硬式邏輯來處理這些投訴。公司希望將這套邏輯擴展到各個市場和產品 line. 生成式 AI 模型為此提供何種優勢？",
+    "options": [
+      "輸出的可預測性",
+      "適應性",
+      "對輸入變化較不敏感",
+      "可解釋性"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "「硬式邏輯」（Hard-coded logic）非常僵化，難以擴展或修改。生成式 AI 模型（如 LLM）具有高度的「適應性」，它們能理解自然語言的細微差別，並能輕鬆適應新的市場、產品線或投訴類型，而無需重寫複雜的規則。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某金融公司希望根據交易資料將所有信用卡活動標示為可能為欺詐或非欺詐。哪一類 ML 模型可以滿足這些需求？",
+    "options": [
+      "回歸",
+      "擴散",
+      "二元分類",
+      "多類別分類"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "這個問題的目標是將活動分為兩個互斥的類別：「欺詐」或「非欺詐」。這是一個典型的「二元分類」(Binary Classification) 任務。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某醫院希望使用具備語音轉文字功能的生成式 AI 解決方案，以協助提升員工撰寫臨床記錄的技能。哪一項 AWS 服務能滿足這些需求？",
+    "options": [
+      "Amazon Q Developer",
+      "Amazon Polly",
+      "Amazon Rekognition",
+      "AWS HealthScribe"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "AWS HealthScribe 是一項專為醫療保健行業設計的生成式 AI 服務。它能分析醫病對話（語音轉文字），並自動生成臨床記錄摘要，這完全符合協助員工撰寫臨床記錄的需求。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "哪一類型的 AI 模型用於生成數值預測？",
+    "options": [
+      "擴散",
+      "回歸",
+      "Transformer",
+      "多模態"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "回歸 (Regression) 模型是一種監督式學習模型，其目標是預測一個連續的數值（例如預測房價、股價或溫度）。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "在大型語言模型 (LLM) 中，向量嵌入的目的是什麼？",
+    "options": [
+      "將文本拆分為可管理的資料片段",
+      "將一組字符視為單一單位進行分組",
+      "提供對文本進行數學比較的能力",
+      "提供輸入中每個單詞的計數"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "向量嵌入 (Vector Embeddings) 將單詞或句子轉換為高維空間中的數值向量。這樣做的主要目的是，語義上相似的文本（如「國王」和「女王」）在向量空間中的位置會很接近，這使得模型能夠「對文本進行數學比較」和理解語義。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司想微調基礎模型 (FM) 使用 AWS 服務。公司需要確保其資料留在存放資料的來源 AWS 區域內，維持私密、安全。哪一組步驟能以最具成本效益的方式滿足這些需求？（選擇兩項。）",
+    "options": [
+      "使用 AWS Outposts 在本地端托管模型",
+      "使用 Amazon Bedrock API",
+      "使用 AWS PrivateLink 與 VPC",
+      "在本地端托管 Amazon Bedrock API",
+      "使用 Amazon CloudWatch 日誌和指標"
+    ],
+    "correctAnswer": [
+      1,
+      2
+    ],
+    "explanation": "Amazon Bedrock API 呼叫的資料預設不會離開來源 AWS 區域。為了進一步確保私密和安全，公司可以使用 AWS PrivateLink 建立一個 VPC 端點，使 Bedrock API 的流量完全在 AWS 內部網路中傳輸，而不經過公用網際網路。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某金融公司使用 AWS 托管其生成式 AI 模型。公司必須產生報告以顯示其遵守處理敏感客戶資料的國際規定。哪一項 AWS 服務能滿足這些需求？",
+    "options": [
+      "Amazon Macie",
+      "AWS Artifact",
+      "AWS Secrets Manager",
+      "AWS Config"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "AWS Artifact 是一個提供 AWS 合規性報告（如 SOC, ISO, PCI）的服務。金融公司可以從 AWS Artifact 下載這些報告，以向稽核人員證明 AWS 基礎設施本身符合處理敏感資料的國際規定。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某醫療公司想要現代化其內部資訊處理應用。公司希望使用生成式 AI 回覆病患的醫療問題。為了確保該應用符合負責任的 AI 原則，應使用哪一 AWS 服務？",
+    "options": [
+      "Amazon Bedrock 的 Guardrails",
+      "Amazon Inspector",
+      "Amazon Rekognition",
+      "AWS Trusted Advisor"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "回覆醫療問題是一個高風險場景。Amazon Bedrock 的 Guardrails 允許公司實施安全護欄，例如過濾有害內容、遮罩敏感資訊 (PII/PHI)，以及定義不應觸及的「禁用主題」（例如提供醫療建議），以確保應用符合負責任 AI 原則。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "哪一項指標用於評估基礎模型 (FM) 在文本摘要任務中的效能？",
+    "options": [
+      "F1 分數",
+      "雙語評估替代 (BLEU) 分數",
+      "準確率",
+      "均方誤差 (MSE)"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "F1 分數是評估摘要品質的常用指標之一（與 ROUGE, BERTScore 等並列）。它透過計算生成摘要與參考摘要之間的 n-gram 重疊的精確率和召回率的調和平均數來運作。MSE 用於回歸，BLEU 主要用於翻譯。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "微調基礎模型 (FM) 的好處是什麼？",
+    "options": [
+      "微調能減小 FM 的大小和複雜度，並使推論速度變慢",
+      "微調利用特定訓練資料從頭開始重新訓練 FM，以適應特定用例",
+      "微調透過在較新的資料上預訓練 FM 來保持其知識最新",
+      "微調透過在新的標記資料上進一步訓練 FM，提高其在特定任務上的性能"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "微調 (Fine-Tuning) 的核心好處是採用一個已經具備廣泛知識的預訓練模型，然後在一個較小的、特定任務的「標記資料集」上對其進行「進一步訓練」，使其在該特定任務（如特定行業的問答）上表現得更好。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司希望改善聊天機器人的回應，使其符合公司的預期語調。公司有 100 個客服人員與客戶之間的高品質對話範例。公司想使用這些資料將公司的語調融入聊天機器人的回應中。哪一解決方案能滿足這些需求？",
+    "options": [
+      "使用 Amazon Personalize 生成回應",
+      "建立 Amazon SageMaker HyperPod 預訓練任務",
+      "使用 Amazon SageMaker 託管模型，並使用 TensorRT 部署大型語言模型 (LLM)",
+      "建立 Amazon Bedrock 微調任務"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "公司擁有一個高品質的範例資料集（100 個對話），並希望模型學習「公司的語調」。這是一個典型的微調 (Fine-Tuning) 場景。使用 Amazon Bedrock 建立微調任務，可以在基礎模型上應用這些範例資料，使模型適應特定的風格和語調。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某電商公司正在使用聊天機器人自動化客戶下單流程。聊天機器人由 AI 驅動，全年無休地在公司的網站上提供服務。公司需要在聊天機器人上線前解決哪一項 AI 系統輸入層面的漏洞？",
+    "options": [
+      "資料外洩",
+      "提示注入",
+      "大型語言模型 (LLM) 幻覺",
+      "概念漂移"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "提示注入 (Prompt Injection) 是一種針對「輸入層面」的攻擊。惡意使用者可以輸入精心設計的提示，試圖繞過聊天機器人的原始指令（例如，要求其忽略下單流程，轉而洩露系統資訊或執行非預期操作）。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某社交媒體公司希望阻止使用者在其應用程式上發布歧視性內容。公司想將 Amazon Bedrock 納入解決方案的一部分。公司應如何使用 Amazon Bedrock 來滿足這些需求？",
+    "options": [
+      "依據使用者偏好提供互動能力",
+      "阻止與預定主題相關的互動",
+      "將使用者對話限制於預定主題",
+      "提供多樣化的回應供使用者選擇以增進參與"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "「歧視性內容」可以被定義為一個「預定主題」。透過使用 Amazon Bedrock Guardrails 的「禁用主題」(Denied Topics) 或「內容過濾器」(Content Filters, 針對仇恨言論)，公司可以自動偵測並「阻止」與這些有害主題相關的互動。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某教育公司正在建立一個應用程式，讓使用者輸入文本或提供問題的圖片。應用程式將返回書面答案及其解釋。哪一種模型類型符合這些需求？",
+    "options": [
+      "電腦視覺模型",
+      "大型多模態語言模型",
+      "擴散模型",
+      "文字轉語音模型"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "該應用需要處理多種輸入類型：「文本」和「圖片」。能夠同時理解和處理多種資料型態（如文字、圖像）的模型被稱為「多模態模型」(Multimodal Model)。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "在生成式 AI 模型生命週期中的哪個階段會進行測試以檢驗模型的準確性？",
+    "options": [
+      "部署",
+      "資料選擇",
+      "微調",
+      "評估"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "在「評估」(Evaluation) 階段，開發者會使用一個保留的測試資料集來檢驗模型（無論是預訓練、微調還是 RAG）的效能，包括其準確性、F1 分數、ROUGE 分數等指標。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "以下哪一敘述正確描述了生成式 AI 中的嵌入 (embeddings)？",
+    "options": [
+      "嵌入將資料表示為高維向量，以捕捉語義關係",
+      "嵌入是一種搜尋資料以找出最有助於回答自然語言問題的資訊的技術",
+      "嵌入透過使用較低精度的資料型別作為權重和啟動函數來降低模型的硬體需求",
+      "嵌入提供為生成式 AI 應用存取和擷取資料的能力"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "嵌入 (Embeddings) 是將資料（如文字或圖片）轉換為高維度的數值向量。這些向量的關鍵特性是它們能「捕捉語義關係」，意味著在概念上相似的項目（如「狗」和「貓」）在向量空間中的位置會彼此靠近。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司想透過整合大型語言模型 (LLM) 為其應用加入生成式 AI 功能。LLM 的回應必須儘可能具有確定性並保持穩定。哪一方案滿足這些需求？",
+    "options": [
+      "將應用程式設定為在提交提示至 LLM 時自動將溫度參數設為 0",
+      "將應用程式設定為在提交提示至 LLM 前，自動在提示末尾添加「使你的回應具備確定性」",
+      "將應用程式設定為在提交提示至 LLM 前，自動在提示開頭添加「使你的回應具備確定性」",
+      "將應用程式設定為在提交提示至 LLM 時自動將溫度參數設為 1"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "溫度 (Temperature) 參數控制模型輸出的隨機性。溫度為 1 會使其高度隨機和有創意；溫度為 0 會使其高度「確定性」(Deterministic)，模型會始終選擇機率最高的下一個詞彙，從而保持回應的穩定。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司需要選擇一個生成式 AI 模型來建構應用程式。該應用必須即時提供回應。公司應考慮哪一項模型特徵來滿足這些需求？",
+    "options": [
+      "模型複雜度",
+      "創新速度",
+      "推論",
+      "訓練時間"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "「推論」(Inference) 是指模型接收輸入（提示）並生成輸出（回應）的過程。「即時回應」要求模型具有低延遲的推論能力，即推論速度要快。訓練時間是在部署前發生的，與即時回應能力無關。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "哪一個術語指的是提供給基礎模型 (FM) 的指令，使其能對問題給出更準確的回應？",
+    "options": [
+      "提示",
+      "指令",
+      "對話",
+      "翻譯"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "「提示」(Prompt) 是使用者提供給基礎模型 (FM) 的輸入，通常包含指令、問題、範例或上下文，用於引導模型生成所需的回應。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某零售公司想建立一個 ML 模型，為客戶推薦產品。公司希望以負責任的方式構建模型。為了減少模型偏差，公司在收集資料時應採用哪一做法？",
+    "options": [
+      "只使用與公司整體客戶族群相符的客戶資料",
+      "收集有過購買歷史的客戶資料",
+      "確保資料平衡，且來自多元群體",
+      "確保資料來自公開可用的資料集"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "模型偏差 (Bias) 通常源於訓練資料的不平衡或缺乏代表性。為了減少偏差並確保公平性，公司必須努力「確保資料平衡」，並使其能代表所有「多元群體」的客戶，而不是僅僅反映某一特定群體。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司正在開發一個 ML 模型來預測客戶流失率。哪一評估指標可以評估此類二元分類任務（例如預測流失）的模型效能？",
+    "options": [
+      "F1 分數",
+      "均方誤差 (MSE)",
+      "R 平方",
+      "模型訓練時間"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "預測客戶是否「流失」（是/否）是一個二元分類任務。F1 分數是評估分類任務的常用指標，它結合了精確率 (Precision) 和召回率 (Recall)，在資料集可能不平衡（例如流失的客戶遠少於未流失的客戶）時尤其有用。MSE 和 R 平方用於回歸任務。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某位 AI 實務人員正在評估一個 Amazon SageMaker 模型的效能。該實務人員必須選擇一項效能指標。這項指標必須顯示正確分類的項目數佔總分類項目數（包括正確和錯誤分類）的比例。哪一指標符合這些要求？",
+    "options": [
+      "準確率",
+      "精確率",
+      "F1 分數",
+      "召回率"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "「準確率」(Accuracy) 的定義正是「正確分類的項目數 / 總項目數」。這是評估分類模型最基本、最直接的指標，儘管在資料不平衡時可能具有誤導性。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某電商公司每天接收多 GB 的客戶資料。公司使用這些資料訓練 ML 模型來預測未來的產品需求。公司需要一種每天執行一次推論的解決方案。哪一種推論類型能滿足這些需求？",
+    "options": [
+      "批次推論",
+      "非同步推論",
+      "即時推論",
+      "無伺服器推論"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "「批次推論」(Batch Inference) 專門用於處理大量累積的資料，並在固定排程（例如「每天執行一次」）下進行推論。這與需要立即回應的「即時推論」相對。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司開發了自訂的電腦視覺模型。公司需要一個使用者友好的資料標記介面，以盡量減少模型在新的現實世界資料上的錯誤。哪一項 AWS 服務、功能或工具能滿足這些需求？",
+    "options": [
+      "Amazon SageMaker Ground Truth",
+      "Amazon SageMaker Canvas",
+      "Amazon Bedrock playground",
+      "Amazon Bedrock Agents"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Amazon SageMaker Ground Truth 是一項全受管的資料標記服務，它提供了「使用者友好的介面」，讓人工標記者能夠輕鬆地為電腦視覺（如圖像分類、物件偵測）和 NLP 任務建立高品質的標記資料集。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司正在將 AI 整合到其員工招聘和雇用解決方案中。公司希望降低偏見風險，確保負責任的 AI 實踐，同時優先考慮公平的雇用決策。公司應考慮負責任 AI 的哪些核心面向？（選擇兩項。）",
+    "options": [
+      "公平性",
+      "R.",
+      "靈活性",
+      "開放原始碼",
+      "透明度"
+    ],
+    "correctAnswer": [
+      0,
+      4
+    ],
+    "explanation": "在招聘等高風險場景中，「公平性」(Fairness) 是指確保 AI 系統不會對特定群體產生系統性偏見。「透明度」(Transparency) 則是指能夠解釋 AI 是如何做出決策的，這對於稽核和建立信任至關重要。這兩者都是負責任 AI 的核心支柱。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某金融公司部署了一個 ML 模型來預測客戶流失。該模型在生產環境中運行了一周。公司希望評估模型預測流失與實際客戶行為的一致程度。哪一指標能滿足這些需求？",
+    "options": [
+      "均方根誤差 (RMSE)",
+      "投資報酬率 (ROI)",
+      "F1 分數",
+      "雙語評估替代 (BLEU) 分數"
+    ],
+    "correctAnswer": [
+      2
+    ],
+    "explanation": "預測客戶流失（是/否）是一個二元分類任務。F1 分數（以及準確率、精確率、召回率）是評估分類模型預測結果與「實際客戶行為」（即真實標籤）一致程度的標準指標。RMSE 用於回歸，BLEU 用於 NLP 生成。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司有一個生成式 AI 應用，使用 Amazon Bedrock 上的預訓練基礎模型 (FM)。公司希望透過使用公司資訊為 FM 增加更多上下文。哪一方案以最具成本效益的方式滿足這些需求？",
+    "options": [
+      "使用 Amazon Bedrock Knowledge Bases",
+      "選擇 Amazon Bedrock 上不同的 FM",
+      "使用 Amazon Bedrock Agents",
+      "在 Amazon Bedrock 上部署自訂模型"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "Amazon Bedrock Knowledge Bases 是一項全受管的檢索增強生成 (RAG) 功能。它能讓公司輕鬆地將其私有資料（公司資訊）連接到 FM，為模型提供額外的上下文，而無需進行成本高昂的微調。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某餐飲公司希望收集一個資料集來預測客戶的食物偏好。公司希望確保資料涵蓋所有族群的食物偏好。這種情況呈現了哪一項資料集特徵？",
+    "options": [
+      "精確度",
+      "多樣性",
+      "新近偏差",
+      "可靠性"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "「多樣性」(Diversity) 是指資料集應包含來自不同來源、群體和觀點的廣泛範例。確保資料「涵蓋所有族群的食物偏好」是提高資料集多樣性的直接體現，有助於減少模型偏見。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某公司想建立一個聊天機器人來回答有關人力資源政策的問題。公司正在使用大型語言模型 (LLM)，並擁有大量的數位文件資料庫。公司應使用哪一技術來最佳化生成的回應？",
+    "options": [
+      "使用檢索增強生成 (RAG)",
+      "使用少量示例提示",
+      "將溫度設為 1",
+      "減少標記大小"
+    ],
+    "correctAnswer": [
+      0
+    ],
+    "explanation": "使用 LLM 並結合「大量的數位文件資料庫」（如 HR 政策）是檢索增強生成 (RAG) 的標準應用場景。RAG 允許模型從這些文件中檢索相關資訊，以生成基於事實的準確回應。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某教育公司正在建立一個聊天機器人，其目標受眾是青少年。公司正在訓練自訂的大型語言模型 (LLM)。公司希望聊天機器人使用具有創意的拼寫和縮寫詞，以符合目標受眾的語言風格。哪一指標可用來評估 LLM 的性能？",
+    "options": [
+      "F1 分數",
+      "BERTScore",
+      "回憶導向摘要評估 (ROUGE)",
+      "雙語評估替代 (BLEU) 分數"
+    ],
+    "correctAnswer": [
+      3
+    ],
+    "explanation": "BLEU (Bilingual Evaluation Understudy) 分數是一種評估生成文本與一組高品質「參考文本」相似度的指標。在此情境中，公司可以建立一個包含理想青少年語言風格的參考資料集，並使用 BLEU 來評估模型的輸出與該風格的接近程度。",
+    "category": "AWS AI 模擬考三"
+  },
+  {
+    "questionText": "某客服團隊正在開發一個應用程式，以分析客戶反饋並自動將反饋分類到不同的類別。類別包括產品品質、客服和配送體驗。這種情況涉及哪一 AI 概念？",
+    "options": [
+      "電腦視覺",
+      "自然語言處理 (NLP)",
+      "推薦系統",
+      "欺詐檢測"
+    ],
+    "correctAnswer": [
+      1
+    ],
+    "explanation": "該應用需要理解和「分析客戶反饋」（文本）並將其「分類」。這是一個典型的自然語言處理 (NLP) 任務，具體來說是文本分類。",
+    "category": "AWS AI 模擬考三"
+  }
+]

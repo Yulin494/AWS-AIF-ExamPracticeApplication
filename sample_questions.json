@@ -1,0 +1,122 @@
+[
+  {
+    "questionText": "Flutter 是由哪家公司開發的？",
+    "options": [
+      "Apple",
+      "Google",
+      "Microsoft",
+      "Facebook"
+    ],
+    "correctAnswer": 1,
+    "explanation": "Flutter 是由 Google 開發的跨平台 UI 框架，可以使用單一程式碼庫建立 iOS、Android、Web 和桌面應用程式。",
+    "category": "Flutter 基礎"
+  },
+  {
+    "questionText": "Dart 語言中，哪個關鍵字用於宣告編譯時常數？",
+    "options": [
+      "var",
+      "let",
+      "const",
+      "final"
+    ],
+    "correctAnswer": 2,
+    "explanation": "const 用於宣告編譯時常數，其值在編譯時就必須確定。final 則用於宣告執行時常數，值在執行時確定後不可變更。",
+    "category": "Dart 語法"
+  },
+  {
+    "questionText": "StatefulWidget 和 StatelessWidget 的主要區別是什麼？",
+    "options": [
+      "性能差異",
+      "是否可以重建",
+      "是否有內部狀態",
+      "是否支援動畫"
+    ],
+    "correctAnswer": 2,
+    "explanation": "StatefulWidget 可以維護內部狀態並在狀態改變時重建 UI，StatelessWidget 則是無狀態的，只根據外部傳入的參數建立 UI。",
+    "category": "Flutter Widget"
+  },
+  {
+    "questionText": "在 Flutter 中，pubspec.yaml 檔案的主要用途是什麼？",
+    "options": [
+      "定義應用程式路由",
+      "管理專案依賴套件",
+      "配置應用程式主題",
+      "定義資料模型"
+    ],
+    "correctAnswer": 1,
+    "explanation": "pubspec.yaml 是 Flutter 專案的設定檔，用於管理專案的依賴套件、資源檔案（如圖片、字型）和專案元資料。",
+    "category": "Flutter 專案"
+  },
+  {
+    "questionText": "以下哪個不是 Flutter 的佈局 Widget？",
+    "options": [
+      "Column",
+      "Row",
+      "Stack",
+      "Provider"
+    ],
+    "correctAnswer": 3,
+    "explanation": "Provider 是一個狀態管理套件，不是佈局 Widget。Column、Row 和 Stack 都是常用的佈局 Widget。",
+    "category": "Flutter Widget"
+  },
+  {
+    "questionText": "在 Dart 中，null safety 的主要目的是什麼？",
+    "options": [
+      "提升程式執行速度",
+      "減少記憶體使用",
+      "避免空指標錯誤",
+      "簡化程式碼撰寫"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Null safety 是 Dart 的一個重要特性，透過型別系統在編譯時期就能檢測出可能的空指標錯誤，提高程式的穩定性。",
+    "category": "Dart 語法"
+  },
+  {
+    "questionText": "Flutter 中使用哪個 Widget 可以讓畫面可以滾動？",
+    "options": [
+      "Container",
+      "SingleChildScrollView",
+      "Center",
+      "Padding"
+    ],
+    "correctAnswer": 1,
+    "explanation": "SingleChildScrollView 可以讓內容超出螢幕時可以滾動。對於列表資料，通常使用 ListView 更為適合。",
+    "category": "Flutter Widget"
+  },
+  {
+    "questionText": "setState() 方法的作用是什麼？",
+    "options": [
+      "初始化 Widget 狀態",
+      "通知 Flutter 重新建立 Widget",
+      "儲存資料到資料庫",
+      "導航到新頁面"
+    ],
+    "correctAnswer": 1,
+    "explanation": "setState() 用於通知 Flutter 框架狀態已改變，需要重新執行 build 方法來更新 UI。",
+    "category": "Flutter 狀態管理"
+  },
+  {
+    "questionText": "以下哪個不是 Dart 的基本資料型別？",
+    "options": [
+      "int",
+      "double",
+      "boolean",
+      "String"
+    ],
+    "correctAnswer": 2,
+    "explanation": "Dart 中布林型別是 bool，不是 boolean。int、double 和 String 都是 Dart 的基本資料型別。",
+    "category": "Dart 語法"
+  },
+  {
+    "questionText": "Flutter 中的熱重載（Hot Reload）功能有什麼優點？",
+    "options": [
+      "可以完全重啟應用程式",
+      "可以快速查看程式碼變更效果而不丟失狀態",
+      "可以自動修復程式錯誤",
+      "可以優化應用程式效能"
+    ],
+    "correctAnswer": 1,
+    "explanation": "熱重載可以在不重啟應用程式的情況下快速應用程式碼變更，並且保留應用程式的當前狀態，大幅提升開發效率。",
+    "category": "Flutter 開發工具"
+  }
+]
