@@ -22,12 +22,12 @@ jobs:
 
     steps:
       - name: Checkout repository
-        uses: actions/checkout@a1b2c3d4e5f6789012345678901234567890abcd
+        uses: actions/checkout@v6
         with:
           persist-credentials: false
 
       - name: Run opencode
-        uses: anomalyco/opencode/github@b1c2d3e4f5678901234567890abcdef123456789
+        uses: anomalyco/opencode/github@latest
         env:
           OPENCODE_API_KEY: ${{ secrets.OPENCODE_API_KEY }}
         with:
